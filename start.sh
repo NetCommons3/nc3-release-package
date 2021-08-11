@@ -71,10 +71,6 @@ do
 		execute "git clone $GITAUTHURL/$plugin.git"
 		execute "cd $CURDIR"
 
-		# .githubディレクトリの追加
-		execute "bash $CURDIR/addGithubAction.sh $plugin"
-		execute "cd $CURDIR"
-
 		# バージョンの変更
 		execute "bash $CURDIR/changeVersion.sh $plugin"
 		execute "cd $CURDIR"
