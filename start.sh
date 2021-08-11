@@ -88,10 +88,6 @@ done
 echo ""
 echo ""
 
-# .githubディレクトリの追加
-execute "bash $CURDIR/addGithubAction.sh NetCommons3"
-execute "cd $CURDIR"
-
 # composer.lockファイルを作り直す
 execute "bash $CURDIR/createComposerLock.sh"
 execute "cd $CURDIR"
