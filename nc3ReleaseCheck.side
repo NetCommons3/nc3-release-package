@@ -1,0 +1,2965 @@
+{
+  "id": "da6e60f2-3605-4394-908b-39f054484ecd",
+  "version": "2.0",
+  "name": "nc3ReleaseCheck",
+  "url": "http://html.local:9096",
+  "tests": [{
+    "id": "9459b46f-bab5-43f2-9d3a-d390611c14e7",
+    "name": "01.インストール",
+    "commands": [{
+      "id": "6d175b9f-50e7-474b-9a35-e06bf9719563",
+      "comment": "",
+      "command": "open",
+      "target": "${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a140b87e-78c5-4cb0-ac16-0fd176626c74",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1386x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cd0bd79-4c03-495a-8dd1-caa5d2d0fb22",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.panel-heading",
+      "targets": [
+        ["css=.panel-heading", "css:finder"],
+        ["xpath=//form[@id='indexForm']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "利用規約"
+    }, {
+      "id": "300a9655-fccf-4ba2-a82e-42da8250fff9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='indexForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'次へ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d37ce0aa-a010-4f1e-b588-524bcee97be9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.panel:nth-child(2) > .panel-heading",
+      "targets": [
+        ["css=.panel:nth-child(2) > .panel-heading", "css:finder"],
+        ["xpath=//form[@id='init_permissionForm']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "バージョンチェック"
+    }, {
+      "id": "1bfcba79-30f1-4fdc-bf31-6473f08a3386",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='init_permissionForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'次へ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d8593a8-08d8-40d4-9d81-6e4010ecd4de",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.panel-heading",
+      "targets": [
+        ["css=.panel-heading", "css:finder"],
+        ["xpath=//form[@id='InitDbForm']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "データベース設定"
+    }, {
+      "id": "2f93dd01-f24c-4aa8-8b07-784a71d59e7f",
+      "comment": "",
+      "command": "type",
+      "target": "id=database",
+      "targets": [
+        ["id=database", "id"],
+        ["name=data[database]", "name"],
+        ["css=#database", "css:finder"],
+        ["xpath=//input[@id='database']", "xpath:attributes"],
+        ["xpath=//form[@id='InitDbForm']/div[2]/div[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "${dbname}"
+    }, {
+      "id": "17c54b81-4db8-48af-8547-b55c7c0dc387",
+      "comment": "",
+      "command": "type",
+      "target": "id=prefix",
+      "targets": [
+        ["id=prefix", "id"],
+        ["name=data[prefix]", "name"],
+        ["css=#prefix", "css:finder"],
+        ["xpath=//input[@id='prefix']", "xpath:attributes"],
+        ["xpath=//form[@id='InitDbForm']/div[2]/div[2]/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "${dbprefix}"
+    }, {
+      "id": "ef8c61f5-a87f-4323-8de0-608ae52beb5e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=data[password]", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='InitDbForm']/div[2]/div[2]/div[5]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[3]/input", "xpath:position"]
+      ],
+      "value": "${dbpassword}"
+    }, {
+      "id": "640be658-b679-438b-a63f-bcadb7f733de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='InitDbForm']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'次へ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34be43dd-65e5-4ac7-a7d1-def773a0afc3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.panel-heading",
+      "targets": [
+        ["css=.panel-heading", "css:finder"],
+        ["xpath=//form[@id='init_admin_userForm']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "管理者ユーザ作成"
+    }, {
+      "id": "32a36af4-f665-487b-8c05-e112b842acc8",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [
+        ["id=UserUsername", "id"],
+        ["name=data[User][username]", "name"],
+        ["css=#UserUsername", "css:finder"],
+        ["xpath=//input[@id='UserUsername']", "xpath:attributes"],
+        ["xpath=//form[@id='init_admin_userForm']/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${user_system_login_id}"
+    }, {
+      "id": "4c9d4ce0-9617-47a9-ad92-3e741778eb12",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [
+        ["id=UserPassword", "id"],
+        ["name=data[User][password]", "name"],
+        ["css=#UserPassword", "css:finder"],
+        ["xpath=//input[@id='UserPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='init_admin_userForm']/div[2]/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${user_system_password}"
+    }, {
+      "id": "370e1dcf-fe7e-44cd-9e69-c1be326ec43e",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPasswordAgain",
+      "targets": [
+        ["id=UserPasswordAgain", "id"],
+        ["name=data[User][password_again]", "name"],
+        ["css=#UserPasswordAgain", "css:finder"],
+        ["xpath=//input[@id='UserPasswordAgain']", "xpath:attributes"],
+        ["xpath=//form[@id='init_admin_userForm']/div[2]/div[2]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${user_system_password}"
+    }, {
+      "id": "5549c4c4-cb13-4e96-a9b5-de96fcff0bba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='init_admin_userForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'次へ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82619196-ab06-49a1-959f-8108023624da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.panel-heading",
+      "targets": [
+        ["css=.panel-heading", "css:finder"],
+        ["xpath=//form[@id='init_site_settingForm']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "当システムで使用する言語を選択してください"
+    }, {
+      "id": "d04afbeb-665f-480e-a55e-6470e684d458",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='init_site_settingForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'次へ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e37a735-227c-41c1-925d-1b8051b2fe46",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'インストール完了')]", "xpath:innerText"]
+      ],
+      "value": "インストール完了"
+    }, {
+      "id": "34b0dfd7-85ad-496a-9251-b8b492372d60",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ホーム",
+      "targets": [
+        ["linkText=ホーム", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'ホーム')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'ホーム')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec8f5d44-2136-4fe4-baf3-c0f99a42f3a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=NetCommons3",
+      "targets": [
+        ["linkText=NetCommons3", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'NetCommons3')]", "xpath:link"],
+        ["xpath=//header[@id='nc-system-header']/nav/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'NetCommons3')]", "xpath:innerText"]
+      ],
+      "value": "NetCommons3"
+    }]
+  }, {
+    "id": "136f73d2-13de-45cc-ae6d-afb43641a1e8",
+    "name": "02.システム管理者：ログイン",
+    "commands": [{
+      "id": "2c34abd3-429f-4e2c-82ab-9a07671766f2",
+      "comment": "",
+      "command": "open",
+      "target": "${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "398777c0-592a-4c14-ab1c-9e74a542b98d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1386x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea691c98-4887-4176-a05d-1b8f84bed3a2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3b235d7-cbf6-45f5-a061-74d0d830c971",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [
+        ["id=UserUsername", "id"],
+        ["name=data[User][username]", "name"],
+        ["css=#UserUsername", "css:finder"],
+        ["xpath=//input[@id='UserUsername']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${user_system_login_id}"
+    }, {
+      "id": "3a337bab-aa36-4dc8-a6c5-995943675b0d",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [
+        ["id=UserPassword", "id"],
+        ["name=data[User][password]", "name"],
+        ["css=#UserPassword", "css:finder"],
+        ["xpath=//input[@id='UserPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_system_password}"
+    }, {
+      "id": "2f9006ae-0c7c-4454-8415-d4dca5d7361d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30032b03-dd42-41f4-b51e-76b9e0decd7b",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": "ログアウト"
+    }, {
+      "id": "2a7531fb-f402-4ba5-b7f0-83eaba3c1a8c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='nc-system-header-navbar']/ul/li[5]/a",
+      "targets": [
+        ["linkText=システム管理者", "linkText"],
+        ["css=.hidden-sm > .ng-scope", "css:finder"],
+        ["xpath=//a[contains(text(),'システム管理者')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' システム管理者')]", "xpath:innerText"]
+      ],
+      "value": "${user_system_handle}"
+    }, {
+      "id": "f74f7d25-0a9f-465d-951e-88efa1b773d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=.nav > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f38300c0-dea1-4695-81f7-71e4245395ec",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": "ログイン"
+    }]
+  }, {
+    "id": "87211f50-172e-4fcb-8094-ccab99b10833",
+    "name": "03.ページ",
+    "commands": [{
+      "id": "c3125d60-3798-406e-9330-5761d6845a1a",
+      "comment": "",
+      "command": "open",
+      "target": "${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98da9261-7873-4c71-ba0c-3f9f948f8744",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1386x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52027303-6318-49c3-889e-f74f6e421a91",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11b5923d-eb0e-48f0-870e-b25df24f00b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [
+        ["id=UserUsername", "id"],
+        ["name=data[User][username]", "name"],
+        ["css=#UserUsername", "css:finder"],
+        ["xpath=//input[@id='UserUsername']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${user_system_login_id}"
+    }, {
+      "id": "6a508ad4-cc80-44f9-8ef4-9de4a29da195",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [
+        ["id=UserPassword", "id"],
+        ["name=data[User][password]", "name"],
+        ["css=#UserPassword", "css:finder"],
+        ["xpath=//input[@id='UserPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_system_password}"
+    }, {
+      "id": "8c92a168-8f46-4f37-955e-ead283c21143",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fec5700-ee62-4c29-b99d-25d2e7cd38e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor24",
+      "targets": [
+        ["id=MenuFramesPageMajor24", "id"],
+        ["linkText=ホーム", "linkText"],
+        ["css=#MenuFramesPageMajor24", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor24']", "xpath:attributes"],
+        ["xpath=//div[@id='box-18']/section/div[2]/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[24]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ホーム')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fab3dc76-1d9c-420e-aafa-993449f5d5fc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ページ設定",
+      "targets": [
+        ["linkText=ページ設定", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ設定')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/pages_edit/index/1/4')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ設定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "597f7ea9-05e2-4a15-a7e5-cde0d81e5e39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h2 > .pull-right .hidden-xs",
+      "targets": [
+        ["css=.h2 > .pull-right .hidden-xs", "css:finder"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/thead/tr/th/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'ページ追加')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "504353f4-a078-4026-8bbc-47bfa65f0b7b",
+      "comment": "",
+      "command": "type",
+      "target": "id=PagesLanguageName",
+      "targets": [
+        ["id=PagesLanguageName", "id"],
+        ["name=data[PagesLanguage][name]", "name"],
+        ["css=#PagesLanguageName", "css:finder"],
+        ["xpath=//input[@id='PagesLanguageName']", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "ページ1"
+    }, {
+      "id": "aee75537-d9fd-416e-8b58-486a5221bc1b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-group > #PagePermalink",
+      "targets": [
+        ["css=.input-group > #PagePermalink", "css:finder"],
+        ["xpath=(//input[@id='PagePermalink'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "page_1"
+    }, {
+      "id": "7a8f23f5-f814-4798-aeab-8ec58a11a5bd",
+      "comment": "",
+      "command": "click",
+      "target": "name=save",
+      "targets": [
+        ["name=save", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='save']", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff138c36-9802-4ff3-8db9-947d0547b9b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h2 > .pull-right .hidden-xs",
+      "targets": [
+        ["css=.h2 > .pull-right .hidden-xs", "css:finder"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/thead/tr/th/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'ページ追加')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b76a58ce-e24c-49e0-bd0e-4871f6af1976",
+      "comment": "",
+      "command": "type",
+      "target": "id=PagesLanguageName",
+      "targets": [
+        ["id=PagesLanguageName", "id"],
+        ["name=data[PagesLanguage][name]", "name"],
+        ["css=#PagesLanguageName", "css:finder"],
+        ["xpath=//input[@id='PagesLanguageName']", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "ページ2"
+    }, {
+      "id": "194d08f9-c73d-4b82-b565-c82095bf41bb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-group > #PagePermalink",
+      "targets": [
+        ["css=.input-group > #PagePermalink", "css:finder"],
+        ["xpath=(//input[@id='PagePermalink'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "page_2"
+    }, {
+      "id": "5d55b96c-527e-44a8-b08c-e58443e92eae",
+      "comment": "",
+      "command": "click",
+      "target": "name=save",
+      "targets": [
+        ["name=save", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='save']", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba4b877d-f171-481c-ac27-6e0d6069ebe2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ページ設定終了",
+      "targets": [
+        ["linkText=ページ設定終了", "linkText"],
+        ["css=.nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ設定終了')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ設定終了')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d3c856e-ea9f-4bf6-8cfe-62d147e9299f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ページ設定",
+      "targets": [
+        ["linkText=ページ設定", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ設定')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/pages_edit/index/1/4')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ設定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "290c0e2f-0c8c-4e0e-92b6-42223248a51e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//tr[3]/td/div/a",
+      "targets": [
+        ["linkText=ページ1", "linkText"],
+        ["css=.ng-scope:nth-child(3) .page-edit-index-page-name", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ1')]", "xpath:link"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/tbody/tr[3]/td/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/page_1')])[2]", "xpath:href"],
+        ["xpath=//tr[3]/td/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ1')]", "xpath:innerText"]
+      ],
+      "value": "ページ1"
+    }, {
+      "id": "5c6f0959-4186-4e22-9866-5dcab784dba2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(3) .glyphicon-arrow-down",
+      "targets": [
+        ["css=.ng-scope:nth-child(3) .glyphicon-arrow-down", "css:finder"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/tbody/tr[3]/td/div/span/button[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/span/button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "988a25b0-a95c-40c7-9e78-f585b2c5e1a1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//tr[3]/td/div/a",
+      "targets": [
+        ["linkText=ページ1", "linkText"],
+        ["css=.ng-scope:nth-child(3) .page-edit-index-page-name", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ1')]", "xpath:link"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/tbody/tr[3]/td/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/page_1')])[2]", "xpath:href"],
+        ["xpath=//tr[3]/td/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ1')]", "xpath:innerText"]
+      ],
+      "value": "ページ2"
+    }, {
+      "id": "4ab401fa-4337-43b5-b75b-bc364aee5166",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(3) .pull-left .hidden-xs",
+      "targets": [
+        ["css=.ng-scope:nth-child(3) .pull-left .hidden-xs", "css:finder"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/tbody/tr[3]/td/div/a[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/a[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2c6ee5c-be4c-4116-8d22-c19a0520ab14",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=削除処理",
+      "targets": [
+        ["linkText=削除処理", "linkText"],
+        ["css=.accordion-toggle", "css:finder"],
+        ["xpath=//div[@id='accordiongroup-7-8783-tab']/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[13]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'削除処理')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7687f61-20cd-403e-b4ea-6f01ede25c65",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8efab76a-fa6c-4806-9350-85b7f78fd316",
+      "comment": "",
+      "command": "click",
+      "target": "name=delete",
+      "targets": [
+        ["name=delete", "name"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@name='delete']", "xpath:attributes"],
+        ["xpath=//div[@id='accordiongroup-7-8783-panel']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' 削除')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0810a942-cd45-4e98-877b-cf17c37aa0fc",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5afd5d5-5602-425e-bec7-29cdfb145db8",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "linkText=ページ2",
+      "targets": [
+        ["linkText=ページ2", "linkText"],
+        ["css=.ng-scope:nth-child(3) .page-edit-index-page-name", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ2')]", "xpath:link"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/tbody/tr[3]/td/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/page_2')]", "xpath:href"],
+        ["xpath=//tr[3]/td/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ2')]", "xpath:innerText"]
+      ],
+      "value": "ページ2"
+    }, {
+      "id": "fb3d81fb-908a-4635-a2cb-ff5e01a1e4ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ページ設定終了",
+      "targets": [
+        ["linkText=ページ設定終了", "linkText"],
+        ["css=.nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ設定終了')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ設定終了')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0c1d159-0de9-4b2a-a9f8-6a90956be5f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4466eb1-184a-4b81-8fc3-7ed8f66e9643",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログイン",
+      "targets": [],
+      "value": "ログイン"
+    }]
+  }, {
+    "id": "7793cdc2-df60-4772-aa4a-27a6ee5bd469",
+    "name": "04.フレーム",
+    "commands": [{
+      "id": "8d42c70d-0e17-435c-a672-86a598fde9b0",
+      "comment": "",
+      "command": "open",
+      "target": "${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f84c847-51ca-44f6-be16-ada4d99e8259",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1386x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41de9fcf-66c9-4906-852f-d0562342d64b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e35023d-3cd8-45d0-bc78-46be06c8e3ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [
+        ["id=UserUsername", "id"],
+        ["name=data[User][username]", "name"],
+        ["css=#UserUsername", "css:finder"],
+        ["xpath=//input[@id='UserUsername']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${user_system_login_id}"
+    }, {
+      "id": "6691a5f9-277f-4c1e-8621-d41069bbf131",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [
+        ["id=UserPassword", "id"],
+        ["name=data[User][password]", "name"],
+        ["css=#UserPassword", "css:finder"],
+        ["xpath=//input[@id='UserPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_system_password}"
+    }, {
+      "id": "9ffd455f-0c9d-470a-b47e-eaa5016ea32e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53e2d108-2365-42d0-8ce0-550a825aa87e",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor24",
+      "targets": [
+        ["id=MenuFramesPageMajor24", "id"],
+        ["linkText=ホーム", "linkText"],
+        ["css=#MenuFramesPageMajor24", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor24']", "xpath:attributes"],
+        ["xpath=//div[@id='box-18']/section/div[2]/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[24]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ホーム')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fa71928-b832-48fe-b083-653ba02f1513",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ページ設定",
+      "targets": [
+        ["linkText=ページ設定", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ設定')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/pages_edit/index/1/4')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ設定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c705bf7-f4f9-4399-8286-91ab87f16fe0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h2 > .pull-right .hidden-xs",
+      "targets": [
+        ["css=.h2 > .pull-right .hidden-xs", "css:finder"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/thead/tr/th/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'ページ追加')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "371ee7ad-f439-4d10-b61c-ada9ec69a54d",
+      "comment": "",
+      "command": "type",
+      "target": "id=PagesLanguageName",
+      "targets": [
+        ["id=PagesLanguageName", "id"],
+        ["name=data[PagesLanguage][name]", "name"],
+        ["css=#PagesLanguageName", "css:finder"],
+        ["xpath=//input[@id='PagesLanguageName']", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "フレームテスト"
+    }, {
+      "id": "cc0e3990-7df6-4655-b8c3-c54bf6c46413",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-group > #PagePermalink",
+      "targets": [
+        ["css=.input-group > #PagePermalink", "css:finder"],
+        ["xpath=(//input[@id='PagePermalink'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "page_frame"
+    }, {
+      "id": "1950f53a-3bf9-49fe-8782-e875443c9cb3",
+      "comment": "",
+      "command": "click",
+      "target": "name=save",
+      "targets": [
+        ["name=save", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='save']", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7110cd05-b31a-4ffb-98e8-8764aa454e12",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=フレームテスト",
+      "targets": [
+        ["linkText=フレームテスト", "linkText"],
+        ["css=.ng-scope:nth-child(4) .page-edit-index-page-name", "css:finder"],
+        ["xpath=//a[contains(text(),'フレームテスト')]", "xpath:link"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/tbody/tr[4]/td/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/page_frame')]", "xpath:href"],
+        ["xpath=//tr[4]/td/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'フレームテスト')]", "xpath:innerText"]
+      ],
+      "value": "フレームテスト"
+    }, {
+      "id": "88fe44f4-a08d-4325-bfef-4cdb2edd76b8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ページ設定終了",
+      "targets": [
+        ["linkText=ページ設定終了", "linkText"],
+        ["css=.nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ設定終了')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ設定終了')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecabb8d3-11cb-4f7f-9130-d1d3e8641c38",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor28",
+      "targets": [
+        ["id=MenuFramesPageMajor28", "id"],
+        ["linkText=フレームテスト", "linkText"],
+        ["css=#MenuFramesPageMajor28", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor28']", "xpath:attributes"],
+        ["xpath=//div[@id='box-18']/section/div[2]/nav/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/page_frame')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'フレームテスト')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "014b3681-13de-48dd-afdc-962897ac26c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=セッティングモードON",
+      "targets": [
+        ["linkText=セッティングモードON", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'セッティングモードON')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/change_setting_mode/?mode=1&page_id=8')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'セッティングモードON')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95212797-cdbd-4863-90f3-4feddb5d18d2",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=セッティングモードOFF",
+      "targets": [
+        ["linkText=セッティングモードON", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'セッティングモードON')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/change_setting_mode/?mode=1&page_id=8')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'セッティングモードON')]", "xpath:innerText"]
+      ],
+      "value": "セッティングモードOFF"
+    }, {
+      "id": "921626b5-38db-4318-b959-b18c6a423464",
+      "comment": "",
+      "command": "click",
+      "target": "css=#box-79 > .add-plugin > .btn",
+      "targets": [
+        ["css=#box-79 > .add-plugin > .btn", "css:finder"],
+        ["xpath=//div[@id='box-79']/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b350fc81-d9cb-4ef6-8e12-46726935a09b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-plugin-79 #FrameAdd9IndexForm > .pull-right > .btn",
+      "targets": [
+        ["css=#add-plugin-79 #FrameAdd9IndexForm > .pull-right > .btn", "css:finder"],
+        ["xpath=(//button[@name='save'])[24]", "xpath:attributes"],
+        ["xpath=(//form[@id='FrameAdd9IndexForm']/div[3]/button)[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/section/div/div/div[2]/div/article[2]/form/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "176c92e6-929f-4251-9fb1-afcc42f08f2f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=キャンセル",
+      "targets": [
+        ["linkText=キャンセル", "linkText"],
+        ["css=.btn-workflow:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'キャンセル')]", "xpath:link"],
+        ["xpath=//form[@id='AnnouncementEditForm']/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/page_frame')])[3]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' キャンセル')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0996e41-5af3-4101-8147-4fb0f7f3e529",
+      "comment": "",
+      "command": "click",
+      "target": "css=#box-79 > .add-plugin .glyphicon",
+      "targets": [
+        ["css=#box-79 > .add-plugin .glyphicon", "css:finder"],
+        ["xpath=//div[@id='box-79']/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c742b05-cc1b-47a3-a54f-d1c98a0f9176",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-plugin-79 #FrameAdd9IndexForm > .pull-right > .btn",
+      "targets": [
+        ["css=#add-plugin-79 #FrameAdd9IndexForm > .pull-right > .btn", "css:finder"],
+        ["xpath=(//button[@name='save'])[24]", "xpath:attributes"],
+        ["xpath=(//form[@id='FrameAdd9IndexForm']/div[3]/button)[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/section/div/div/div[2]/div/article[2]/form/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "288cdc97-bb5e-497d-8a22-ec6f699fc47e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=キャンセル",
+      "targets": [
+        ["linkText=キャンセル", "linkText"],
+        ["css=.btn-workflow:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'キャンセル')]", "xpath:link"],
+        ["xpath=//form[@id='AnnouncementEditForm']/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/page_frame')])[3]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' キャンセル')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc128697-ef90-4eea-8e69-7e0bc260363c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#frame-6 > .panel-heading > .pull-right > .btn > .glyphicon",
+      "targets": [
+        ["css=#frame-6 > .panel-heading > .pull-right > .btn > .glyphicon", "css:finder"],
+        ["xpath=//section[@id='frame-6']/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ccfbd02-6da1-4b5f-9a00-381e7ede976d",
+      "comment": "",
+      "command": "type",
+      "target": "id=FramesLanguageName",
+      "targets": [
+        ["id=FramesLanguageName", "id"],
+        ["name=data[FramesLanguage][name]", "name"],
+        ["css=#FramesLanguageName", "css:finder"],
+        ["xpath=//input[@id='FramesLanguageName']", "xpath:attributes"],
+        ["xpath=//form[@id='FrameIndexForm']/input[3]", "xpath:idRelative"],
+        ["xpath=//section/div/form/input[3]", "xpath:position"]
+      ],
+      "value": "フレーム1"
+    }, {
+      "id": "23db73f0-9d60-40e2-b866-bc178170835f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(8)",
+      "targets": [
+        ["css=.btn:nth-child(8)", "css:finder"],
+        ["xpath=//button[@onclick='submit(); return false;']", "xpath:attributes"],
+        ["xpath=//form[@id='FrameIndexForm']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bc3519d-52fc-4629-abb8-c8c75b6cb26c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#frame-6 > .panel-heading > span",
+      "targets": [
+        ["css=#frame-6 > .panel-heading > span", "css:finder"],
+        ["xpath=//section[@id='frame-6']/div/span", "xpath:idRelative"],
+        ["xpath=//section[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'フレーム1')]", "xpath:innerText"]
+      ],
+      "value": "フレーム1"
+    }, {
+      "id": "c804d1d4-d1e8-4595-ac1f-459de25fc623",
+      "comment": "",
+      "command": "click",
+      "target": "css=#frame-7 > .panel-heading > .pull-right > .btn > .glyphicon",
+      "targets": [
+        ["css=#frame-7 > .panel-heading > .pull-right > .btn > .glyphicon", "css:finder"],
+        ["xpath=//section[@id='frame-7']/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9441864d-c4e2-420e-a7b2-811468d8c386",
+      "comment": "",
+      "command": "type",
+      "target": "id=FramesLanguageName",
+      "targets": [
+        ["id=FramesLanguageName", "id"],
+        ["name=data[FramesLanguage][name]", "name"],
+        ["css=#FramesLanguageName", "css:finder"],
+        ["xpath=//input[@id='FramesLanguageName']", "xpath:attributes"],
+        ["xpath=//form[@id='FrameIndexForm']/input[3]", "xpath:idRelative"],
+        ["xpath=//section/div/form/input[3]", "xpath:position"]
+      ],
+      "value": "フレーム2"
+    }, {
+      "id": "351fc33f-79d1-4d88-9422-6c13128b31fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(8)",
+      "targets": [
+        ["css=.btn:nth-child(8)", "css:finder"],
+        ["xpath=//button[@onclick='submit(); return false;']", "xpath:attributes"],
+        ["xpath=//form[@id='FrameIndexForm']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c808a1c-bede-4468-97c1-6d15b799905a",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//section[2]/div/span",
+      "targets": [
+        ["css=#frame-7 > .panel-heading > span", "css:finder"],
+        ["xpath=//section[@id='frame-7']/div/span", "xpath:idRelative"],
+        ["xpath=//section[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'フレーム2')]", "xpath:innerText"]
+      ],
+      "value": "フレーム1"
+    }, {
+      "id": "12102f38-8769-42e6-9302-1b4d8fc29c35",
+      "comment": "",
+      "command": "click",
+      "target": "name=down",
+      "targets": [
+        ["name=down", "name"],
+        ["css=#frame-7 .btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@name='down']", "xpath:attributes"],
+        ["xpath=//form[@id='FrameIndexForm']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'下に移動')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d2aaee8-ae34-4081-905a-29e97d960389",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//section[2]/div/span",
+      "targets": [
+        ["css=#frame-7 > .panel-heading > span", "css:finder"],
+        ["xpath=//section[@id='frame-7']/div/span", "xpath:idRelative"],
+        ["xpath=//section[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'フレーム2')]", "xpath:innerText"]
+      ],
+      "value": "フレーム2"
+    }, {
+      "id": "771bddb0-e00f-47cd-9de4-93f14bdbde1e",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51b616b1-9fc4-493d-b433-4f324e9276bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#frame-6 .glyphicon-remove",
+      "targets": [
+        ["css=#frame-6 .glyphicon-remove", "css:finder"],
+        ["xpath=(//form[@id='FrameIndexForm']/button/span)[5]", "xpath:idRelative"],
+        ["xpath=//form[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de1ffeff-deab-4164-951b-87da6dd931ac",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "810f332c-1073-4ca3-9cde-8f2efd5dfadf",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=#frame-6 > .panel-heading > span",
+      "targets": [
+        ["css=#frame-7 > .panel-heading > span", "css:finder"],
+        ["xpath=//section[@id='frame-7']/div/span", "xpath:idRelative"],
+        ["xpath=//section/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'フレーム2')]", "xpath:innerText"]
+      ],
+      "value": "フレーム1"
+    }, {
+      "id": "6c747b6e-282b-4066-b900-b213acbf1b59",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=セッティングモードOFF",
+      "targets": [
+        ["linkText=セッティングモードOFF", "linkText"],
+        ["css=.nav > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'セッティングモードOFF')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/change_setting_mode/?mode=0&page_id=8')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'セッティングモードOFF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9d7ceac-bd8b-49c8-a1c8-dbc180a87e5c",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=セッティングモードON",
+      "targets": [
+        ["linkText=セッティングモードON", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'セッティングモードON')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/change_setting_mode/?mode=1&page_id=8')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'セッティングモードON')]", "xpath:innerText"]
+      ],
+      "value": "セッティングモードON"
+    }, {
+      "id": "6e1917d3-9aaa-4bf8-8cc5-d6fffc796f00",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6a1c4a3-094f-46f5-9ff8-8df78558a3b7",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": "ログイン"
+    }]
+  }, {
+    "id": "b7df37a3-693b-4872-9ae4-56fcb85c4e72",
+    "name": "05.お知らせ",
+    "commands": [{
+      "id": "722a4f75-8a67-4d4e-8d55-cf030dc7c7c8",
+      "comment": "",
+      "command": "open",
+      "target": "${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "087aea5e-8735-40e5-bf92-f5eb2c55903a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1386x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "112d5ea4-1739-46b8-b7cc-9e1c84c47984",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5bca3a5-67ce-4a59-8fe4-bc01872dc8f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [
+        ["id=UserUsername", "id"],
+        ["name=data[User][username]", "name"],
+        ["css=#UserUsername", "css:finder"],
+        ["xpath=//input[@id='UserUsername']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${user_system_login_id}"
+    }, {
+      "id": "5f960b22-6ece-4451-a6a8-95abbec3f170",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [
+        ["id=UserPassword", "id"],
+        ["name=data[User][password]", "name"],
+        ["css=#UserPassword", "css:finder"],
+        ["xpath=//input[@id='UserPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_system_password}"
+    }, {
+      "id": "b19dda18-a308-4b51-a22e-f0eef525b47a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6178cd2c-b7c6-4d6d-8716-8a38bc7dd003",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor24",
+      "targets": [
+        ["id=MenuFramesPageMajor24", "id"],
+        ["linkText=ホーム", "linkText"],
+        ["css=#MenuFramesPageMajor24", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor24']", "xpath:attributes"],
+        ["xpath=//div[@id='box-18']/section/div[2]/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[24]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ホーム')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "437ebcb3-10a5-48ef-9c8b-d17123b80fae",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ページ設定",
+      "targets": [
+        ["linkText=ページ設定", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ設定')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/pages_edit/index/1/4')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ設定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "086f9291-394b-42c3-aa47-6bff1a4e87a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h2 > .pull-right .hidden-xs",
+      "targets": [
+        ["css=.h2 > .pull-right .hidden-xs", "css:finder"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/thead/tr/th/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'ページ追加')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b8aa2e1-3175-4e02-afd2-ea2696c050c0",
+      "comment": "",
+      "command": "type",
+      "target": "id=PagesLanguageName",
+      "targets": [
+        ["id=PagesLanguageName", "id"],
+        ["name=data[PagesLanguage][name]", "name"],
+        ["css=#PagesLanguageName", "css:finder"],
+        ["xpath=//input[@id='PagesLanguageName']", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "お知らせ"
+    }, {
+      "id": "d82b5d67-1af7-4fd4-887c-d90a04d3ba6e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-group > #PagePermalink",
+      "targets": [
+        ["css=.input-group > #PagePermalink", "css:finder"],
+        ["xpath=(//input[@id='PagePermalink'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "page_announcement"
+    }, {
+      "id": "560f5ec8-d578-474a-9360-b5302b8543b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=save",
+      "targets": [
+        ["name=save", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='save']", "xpath:attributes"],
+        ["xpath=//form[@id='PageAddForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e1a19b1-f466-46c5-808e-29f7f26fbc49",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=お知らせ",
+      "targets": [
+        ["linkText=お知らせ", "linkText"],
+        ["css=.ng-scope:nth-child(5) .page-edit-index-page-name", "css:finder"],
+        ["xpath=//a[contains(text(),'お知らせ')]", "xpath:link"],
+        ["xpath=//form[@id='PageMoveForm']/div[2]/table/tbody/tr[5]/td/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/page_announcement')]", "xpath:href"],
+        ["xpath=//tr[5]/td/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'お知らせ')]", "xpath:innerText"]
+      ],
+      "value": "お知らせ"
+    }, {
+      "id": "fea5ce2b-93a2-4c41-8ed9-e0a176881ecd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ページ設定終了",
+      "targets": [
+        ["linkText=ページ設定終了", "linkText"],
+        ["css=.nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ページ設定終了')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ページ設定終了')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af5bdffa-ac17-402e-b224-94e2a5e3303d",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor29",
+      "targets": [
+        ["id=MenuFramesPageMajor29", "id"],
+        ["linkText=お知らせ", "linkText"],
+        ["css=#MenuFramesPageMajor29", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor29']", "xpath:attributes"],
+        ["xpath=//div[@id='box-18']/section/div[2]/nav/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/page_announcement')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'お知らせ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4d6a4c2-62f2-44cd-ba03-c1a8e1df039b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=セッティングモードON",
+      "targets": [
+        ["linkText=セッティングモードON", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'セッティングモードON')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/change_setting_mode/?mode=1&page_id=9')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'セッティングモードON')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30aa7d0d-b25e-4b3d-9f99-34656a3f5184",
+      "comment": "",
+      "command": "click",
+      "target": "css=#box-84 > .add-plugin > .btn",
+      "targets": [
+        ["css=#box-84 > .add-plugin > .btn", "css:finder"],
+        ["xpath=//div[@id='box-84']/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6926079-7d5c-460b-9fa6-9eb8c753500e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#add-plugin-84 #FrameAdd9IndexForm > .pull-right > .btn",
+      "targets": [
+        ["css=#add-plugin-84 #FrameAdd9IndexForm > .pull-right > .btn", "css:finder"],
+        ["xpath=(//button[@name='save'])[24]", "xpath:attributes"],
+        ["xpath=(//form[@id='FrameAdd9IndexForm']/div[3]/button)[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/section/div/div/div[2]/div/article[2]/form/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b2d5ef1-7274-4e5b-9f08-c7cd04a9a394",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a385db55-c30a-416b-b15d-9abdcf057397",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "<p>お知らせ：テスト記事投稿1テスト1テスト1テスト1テスト1テスト1</p><p>お知らせ：テスト記事投稿2テスト2テスト2テスト2テスト2テスト2</p><p><br data-mce-bogus=\"1\"></p>"
+    }, {
+      "id": "17b89d8b-54c2-4458-a6e3-4895f720151a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ceeed7f-d1e3-436c-bf0b-1ff76d7f3302",
+      "comment": "",
+      "command": "click",
+      "target": "name=save_1",
+      "targets": [
+        ["name=save_1", "name"],
+        ["css=.btn-primary:nth-child(4)", "css:finder"],
+        ["xpath=//button[@name='save_1']", "xpath:attributes"],
+        ["xpath=//form[@id='AnnouncementEditForm']/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9744097d-80ad-436e-bb44-193eaae455bd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='frame-8']/div[2]/article/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'お知らせ：テスト記事投稿1テスト1テスト1テスト1テスト1テスト1')]", "xpath:innerText"]
+      ],
+      "value": "お知らせ：テスト記事投稿1テスト1テスト1テスト1テスト1テスト1"
+    }, {
+      "id": "9b5364a7-eddd-4c3f-800a-ee84f967d118",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='frame-8']/div[2]/article/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'お知らせ：テスト記事投稿2テスト2テスト2テスト2テスト2テスト2')]", "xpath:innerText"]
+      ],
+      "value": "お知らせ：テスト記事投稿2テスト2テスト2テスト2テスト2テスト2"
+    }, {
+      "id": "2c2934d1-e832-48e2-b71a-dbed89ce605c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=セッティングモードOFF",
+      "targets": [
+        ["linkText=セッティングモードOFF", "linkText"],
+        ["css=.nav > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'セッティングモードOFF')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/pages/change_setting_mode/?mode=0&page_id=9')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'セッティングモードOFF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f999f6ab-8f3a-4aae-9833-f881ee570480",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor25",
+      "targets": [
+        ["id=MenuFramesPageMajor25", "id"],
+        ["linkText=プライベート", "linkText"],
+        ["css=#MenuFramesPageMajor25", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor25']", "xpath:attributes"],
+        ["xpath=//div[@id='box-18']/section/div[2]/nav/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/private/398c6d0c0cb5b32f1f3af79c32806295')]", "xpath:href"],
+        ["xpath=//nav/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'プライベート')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c8e77da-e0cd-4f80-a3c6-44357bd628e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-muted",
+      "targets": [
+        ["css=.text-muted", "css:finder"],
+        ["xpath=//article[@id='topic-frame-5']/article/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "お知らせ：テスト記事投稿1テスト1テスト1テスト1テスト1テスト1 お知らせ：テスト記事投稿2テスト2テスト2テスト2テスト2テスト2  "
+    }, {
+      "id": "7ad69474-0343-44c0-b749-bc9bcf91fd31",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MenuFramesPageMajor29 > .pull-left",
+      "targets": [
+        ["css=#MenuFramesPageMajor29 > .pull-left", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor29']/span", "xpath:idRelative"],
+        ["xpath=//a[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb3b57a8-709a-4cee-a727-a0d0badfdb9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hidden-xs",
+      "targets": [
+        ["css=.hidden-xs", "css:finder"],
+        ["xpath=//section[@id='frame-8']/div[2]/header/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'編集')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4c18008-044b-4cf5-9c36-9d34cd25db75",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c6227bc-9a0b-4cab-aaf6-c42d1a9c1f88",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "<p><br data-mce-bogus=\"1\"></p>"
+    }, {
+      "id": "9d6ae152-9c09-479c-a045-98419c6f6669",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "<p>お知らせ：テスト記事編集1テスト1テスト1テスト1テスト1テスト1</p><p>お知らせ：テスト記事編集2テスト2テスト2テスト2テスト2テスト2</p><p><br data-mce-bogus=\"1\"></p>"
+    }, {
+      "id": "fcf3e79c-b55a-4377-b849-bf57e4d0274a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "2da5502f-d7fe-4170-b79d-e270e132946a",
+      "comment": "",
+      "command": "click",
+      "target": "name=save_1",
+      "targets": [
+        ["name=save_1", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='save_1']", "xpath:attributes"],
+        ["xpath=//form[@id='AnnouncementEditForm']/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ab7a913-9df9-455e-bb12-da7ae480231b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='frame-8']/div[2]/article/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'お知らせ：テスト記事編集1テスト1テスト1テスト1テスト1テスト1')]", "xpath:innerText"]
+      ],
+      "value": "お知らせ：テスト記事編集1テスト1テスト1テスト1テスト1テスト1"
+    }, {
+      "id": "3d7d2a9e-d3ff-4ba1-b665-4b370ef10d5c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='frame-8']/div[2]/article/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'お知らせ：テスト記事編集2テスト2テスト2テスト2テスト2テスト2')]", "xpath:innerText"]
+      ],
+      "value": "お知らせ：テスト記事編集2テスト2テスト2テスト2テスト2テスト2"
+    }, {
+      "id": "5cdffddc-037a-4bfe-a632-4597380bc2f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor25",
+      "targets": [
+        ["id=MenuFramesPageMajor25", "id"],
+        ["linkText=プライベート", "linkText"],
+        ["css=#MenuFramesPageMajor25", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor25']", "xpath:attributes"],
+        ["xpath=//div[@id='box-18']/section/div[2]/nav/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/private/398c6d0c0cb5b32f1f3af79c32806295')]", "xpath:href"],
+        ["xpath=//nav/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'プライベート')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ad0d96c-b741-4b1d-838e-7117e7080019",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-muted",
+      "targets": [
+        ["css=.text-muted", "css:finder"],
+        ["xpath=//article[@id='topic-frame-5']/article/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "お知らせ：テスト記事編集1テスト1テスト1テスト1テスト1テスト1 お知らせ：テスト記事編集2テスト2テスト2テスト2テスト2テスト2  "
+    }, {
+      "id": "6a46fa1b-195b-4b03-9ab9-2292dffbd204",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor29",
+      "targets": [
+        ["id=MenuFramesPageMajor29", "id"],
+        ["linkText=お知らせ", "linkText"],
+        ["css=#MenuFramesPageMajor29", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor29']", "xpath:attributes"],
+        ["xpath=//div[@id='box-18']/section/div[2]/nav/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/page_announcement')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a754475-05b7-4969-af2a-5bc98aeabf7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hidden-xs",
+      "targets": [
+        ["css=.hidden-xs", "css:finder"],
+        ["xpath=//section[@id='frame-8']/div[2]/header/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'編集')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f949a6ab-dcc4-4ec7-bb55-4bc3c6ccb23a",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7091bbaa-2e08-442c-8d7f-49d2d6b6da69",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mce-i-image",
+      "targets": [
+        ["css=.mce-i-image", "css:finder"],
+        ["xpath=//div[@id='image-btn']/button/i", "xpath:idRelative"],
+        ["xpath=//div[15]/div/div[3]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d36ac4cb-da35-40d6-9110-34d1e5b244b3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div[2]/div/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a59734f9-3307-4ad6-a671-17bc6b853562",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.image-thumb",
+      "targets": [
+        ["css=.image-thumb", "css:finder"],
+        ["xpath=//img[@alt='thumb']", "xpath:img"],
+        ["xpath=//div[@id='thumb-wrap']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "b6d3522e-f888-4bc2-8cbc-98516058a208",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'OK')]",
+      "targets": [
+        ["css=#mceu_114 > button", "css:finder"],
+        ["xpath=(//button[@type='button'])[46]", "xpath:attributes"],
+        ["xpath=//div[@id='mceu_114']/button", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div[3]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c1f4868-eeae-477a-8c05-c5ed76624a87",
+      "comment": "",
+      "command": "click",
+      "target": "name=save_1",
+      "targets": [
+        ["name=save_1", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='save_1']", "xpath:attributes"],
+        ["xpath=//form[@id='AnnouncementEditForm']/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70fb791e-8139-4ad0-acda-93e9d57845ea",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.img-responsive",
+      "targets": [
+        ["css=.img-responsive", "css:finder"],
+        ["xpath=//img[contains(@src,'http://html.local:9096/release_check/nc3-3-3/wysiwyg/image/download/1/1/big')]", "xpath:img"],
+        ["xpath=//section[@id='frame-8']/div[2]/article/p/img", "xpath:idRelative"],
+        ["xpath=//p/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1b4efd9-24a0-4348-93ae-a4f1f8d3fd39",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MenuFramesPageMajor25 > .pull-left",
+      "targets": [
+        ["css=#MenuFramesPageMajor25 > .pull-left", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor25']/span", "xpath:idRelative"],
+        ["xpath=//nav/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'プライベート')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9068860e-be2e-46f7-b3b4-ec8f7840ad83",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.media-right img",
+      "targets": [
+        ["css=.media-right img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://html.local:9096/release_check/nc3-3-3/wysiwyg/image/download/1/1/thumb')]", "xpath:img"],
+        ["xpath=//article[@id='topic-frame-5']/article/div[2]/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7ce25d0-b6d4-4ac9-9c38-2a6a147efdaa",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor29",
+      "targets": [
+        ["id=MenuFramesPageMajor29", "id"],
+        ["linkText=お知らせ", "linkText"],
+        ["css=#MenuFramesPageMajor29", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor29']", "xpath:attributes"],
+        ["xpath=//div[@id='box-18']/section/div[2]/nav/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/page_announcement')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89a0198b-c009-41c3-abaa-5695c55c4e2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hidden-xs",
+      "targets": [
+        ["css=.hidden-xs", "css:finder"],
+        ["xpath=//section[@id='frame-8']/div[2]/header/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'編集')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80014d58-e90e-4a5c-8ac5-3ad7e88b6f26",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecd6fe87-e394-4a7f-93e4-800b1a7a06de",
+      "comment": "",
+      "command": "click",
+      "target": "name=delete",
+      "targets": [
+        ["name=delete", "name"],
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@name='delete']", "xpath:attributes"],
+        ["xpath=//form[@id='AnnouncementBlocksDeleteForm']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,' 削除')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f989e21-c39b-401d-b538-c24e9dd969f7",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b089ec45-dabc-45f8-852c-d559d5b73aab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=article",
+      "targets": [
+        ["css=article", "css:finder"],
+        ["xpath=//section[@id='frame-8']/div[2]/article", "xpath:idRelative"],
+        ["xpath=//article", "xpath:position"],
+        ["xpath=//article[contains(.,'本文がありません。')]", "xpath:innerText"]
+      ],
+      "value": "本文がありません。"
+    }, {
+      "id": "34681341-35ef-40d1-9b4b-53692207c7f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MenuFramesPageMajor25 > .pull-left",
+      "targets": [
+        ["css=#MenuFramesPageMajor25 > .pull-left", "css:finder"],
+        ["xpath=//a[@id='MenuFramesPageMajor25']/span", "xpath:idRelative"],
+        ["xpath=//nav/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'プライベート')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d94664a3-0dc7-497e-94ae-81bf002918d9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.nc-not-found",
+      "targets": [
+        ["css=.nc-not-found", "css:finder"],
+        ["xpath=//section[@id='frame-5']/div[2]/article", "xpath:idRelative"],
+        ["xpath=//article", "xpath:position"],
+        ["xpath=//article[contains(.,'トピックがありません。')]", "xpath:innerText"]
+      ],
+      "value": "トピックがありません。"
+    }, {
+      "id": "04e60117-cbd6-45b2-ab7d-47f5b6f08900",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=.nav > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77aee7ad-437c-4bba-bf72-66798c79f7a4",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログイン",
+      "targets": [],
+      "value": "ログイン"
+    }]
+  }, {
+    "id": "656dcef0-dbf0-41fd-bd66-0c4a5c4f16f5",
+    "name": "06.ルーム管理",
+    "commands": [{
+      "id": "6cc53213-e202-47cb-b955-8fffe08b4ef0",
+      "comment": "",
+      "command": "open",
+      "target": "${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "faaa170d-8bef-474a-af6c-56e1aa128e07",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1386x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1811b17d-e29f-4e1c-8561-39fee4414dfd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93aba3be-b889-49f9-8c63-c9e50afff99d",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [
+        ["id=UserUsername", "id"],
+        ["name=data[User][username]", "name"],
+        ["css=#UserUsername", "css:finder"],
+        ["xpath=//input[@id='UserUsername']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${user_system_login_id}"
+    }, {
+      "id": "d34d9089-7ae6-4323-8f93-7543d8a06ea7",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [
+        ["id=UserPassword", "id"],
+        ["name=data[User][password]", "name"],
+        ["css=#UserPassword", "css:finder"],
+        ["xpath=//input[@id='UserPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_system_password}"
+    }, {
+      "id": "2e23020d-9ebf-4174-8b65-2cea52b664fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93c47abe-4853-443e-9ba6-47d8c87ec495",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=管理",
+      "targets": [
+        ["linkText=管理", "linkText"],
+        ["css=.nav > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/control_panel/control_panel/index/2?frame_id=2&page_id=5')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d20aaa63-8b73-4d89-b3fc-75825f737a6a",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=管理終了",
+      "targets": [
+        ["linkText=管理終了", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理終了')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理終了')]", "xpath:innerText"]
+      ],
+      "value": "管理終了"
+    }, {
+      "id": "de089336-b0a6-4878-bb37-6c10cb9b5ffd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ルーム管理",
+      "targets": [
+        ["linkText=ルーム管理", "linkText"],
+        ["css=.list-group-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'ルーム管理')]", "xpath:link"],
+        ["xpath=//div[@id='container-major']/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/rooms/rooms/index/4/')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'ルーム管理')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c6fda66-88b3-42f3-9ccc-40121ee7e902",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.plugin-rooms > .clearfix",
+      "targets": [
+        ["css=.plugin-rooms > .clearfix", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'ルーム管理')]", "xpath:innerText"]
+      ],
+      "value": "ルーム管理"
+    }, {
+      "id": "cf4190f3-758f-4b01-842c-6e3fb606f3cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success > .hidden-xs",
+      "targets": [
+        ["css=.btn-success > .hidden-xs", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/div[3]/div/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'ルーム')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa700aae-339a-45ce-a18d-2afc2b59c59b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.progress-bar > .wizard-step-item-title",
+      "targets": [
+        ["css=.progress-bar > .wizard-step-item-title", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1 基本設定')]", "xpath:innerText"]
+      ],
+      "value": "1 基本設定"
+    }, {
+      "id": "b03cb6e7-efcd-4e49-96b2-18fd079492bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=RoomsLanguage0Name",
+      "targets": [
+        ["id=RoomsLanguage0Name", "id"],
+        ["name=data[RoomsLanguage][0][name]", "name"],
+        ["css=#RoomsLanguage0Name", "css:finder"],
+        ["xpath=//input[@id='RoomsLanguage0Name']", "xpath:attributes"],
+        ["xpath=//div[@id='rooms-rooms-2']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "コミュニティルーム1"
+    }, {
+      "id": "6d5740bf-c2b7-467d-8914-573aed9e4cfa",
+      "comment": "",
+      "command": "click",
+      "target": "name=save",
+      "targets": [
+        ["name=save", "name"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@name='save']", "xpath:attributes"],
+        ["xpath=//form[@id='RoomBasicForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'次へ ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b0628ba-ffa0-4554-b654-55813d31fd56",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.progress-bar > .wizard-step-item-title",
+      "targets": [
+        ["css=.progress-bar > .wizard-step-item-title", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2 参加者の選択')]", "xpath:innerText"]
+      ],
+      "value": "2 参加者の選択"
+    }, {
+      "id": "be682917-36bf-4483-a6cd-441455ae85b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=save",
+      "targets": [
+        ["name=save", "name"],
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//button[@name='save']", "xpath:attributes"],
+        ["xpath=//form[@id='RoomRoomsRolesUsersForm']/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'次へ ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04a0cbd6-6fca-4e2a-9aba-dd2d9f873349",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.progress-bar > .wizard-step-item-title",
+      "targets": [
+        ["css=.progress-bar > .wizard-step-item-title", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/div/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'3 プラグインの選択')]", "xpath:innerText"]
+      ],
+      "value": "3 プラグインの選択"
+    }, {
+      "id": "42b83dc6-af5c-436e-8b44-89214909426e",
+      "comment": "",
+      "command": "click",
+      "target": "name=save",
+      "targets": [
+        ["name=save", "name"],
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//button[@name='save']", "xpath:attributes"],
+        ["xpath=//form[@id='RoomPluginsRoomsForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'決定')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dfe7b13-6d37-4b99-aa25-56154d34a090",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.rooms-index-room-name",
+      "targets": [
+        ["css=.rooms-index-room-name", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/article/div/table/tbody/tr/td/a/span", "xpath:idRelative"],
+        ["xpath=//td/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'コミュニティルーム1')]", "xpath:innerText"]
+      ],
+      "value": "コミュニティルーム1"
+    }, {
+      "id": "c4f7a313-eabf-4751-b4e1-18988ef023cf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=管理終了",
+      "targets": [
+        ["linkText=管理終了", "linkText"],
+        ["css=.navbar-nav > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理終了')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理終了')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9642b321-45fd-4d92-999d-4f674c54f032",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=管理",
+      "targets": [
+        ["linkText=管理", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/control_panel/control_panel/index/2?frame_id=2&page_id=4')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理')]", "xpath:innerText"]
+      ],
+      "value": "管理"
+    }, {
+      "id": "2ba2e1c4-ae3a-4580-965f-8ccb0a7b78aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcb4262e-216f-4b6e-a3a2-f74cf3e77382",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": "ログイン"
+    }]
+  }, {
+    "id": "79b9e32f-05a2-4400-abed-443943f5decc",
+    "name": "07.会員管理",
+    "commands": [{
+      "id": "e881668d-eafe-46d0-b45d-364d0407b916",
+      "comment": "",
+      "command": "open",
+      "target": "${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "158ac8e3-c0f1-45dc-9404-03ecc0a7dfd3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1386x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e87c006-6dc9-4c77-bfbc-c933961a17a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1075c15-cffe-4391-be4b-e1e406a4a301",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [
+        ["id=UserUsername", "id"],
+        ["name=data[User][username]", "name"],
+        ["css=#UserUsername", "css:finder"],
+        ["xpath=//input[@id='UserUsername']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${user_system_login_id}"
+    }, {
+      "id": "fd18c3a0-211c-4ea6-9c17-fe4fde8a4209",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [
+        ["id=UserPassword", "id"],
+        ["name=data[User][password]", "name"],
+        ["css=#UserPassword", "css:finder"],
+        ["xpath=//input[@id='UserPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_system_password}"
+    }, {
+      "id": "21691f87-7f6e-42ab-ae10-3b49a92fc4e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9be9f84c-e42e-4ab3-824c-926e9c1abbbc",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=.nav > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": "ログアウト"
+    }, {
+      "id": "38a1122c-013e-47d6-a057-53abe19dad79",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=管理",
+      "targets": [
+        ["linkText=管理", "linkText"],
+        ["css=.nav > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/control_panel/control_panel/index/2?frame_id=2&page_id=5')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70a22471-f3ae-435d-b1e9-9ee208cf28a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=管理終了",
+      "targets": [
+        ["linkText=管理終了", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理終了')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理終了')]", "xpath:innerText"]
+      ],
+      "value": "管理終了"
+    }, {
+      "id": "fcc9420f-c29f-4e2d-b6a9-87c89d9e60f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=会員管理",
+      "targets": [
+        ["linkText=会員管理", "linkText"],
+        ["css=.list-group-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'会員管理')]", "xpath:link"],
+        ["xpath=//div[@id='container-major']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/user_manager/user_manager/index/')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'会員管理')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "830a7ef4-7524-42b5-8f4c-20d316191aa4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.plugin-user-manager > .clearfix",
+      "targets": [
+        ["css=.plugin-user-manager > .clearfix", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "会員管理 1 / 1 ページ (総件数: 1件)\\nエクスポート インポート"
+    }, {
+      "id": "428023a3-03dd-4a40-a983-da9a03faf4b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success > .hidden-xs",
+      "targets": [
+        ["css=.btn-success > .hidden-xs", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/div[2]/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'会員の追加')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b516a92-8377-4fda-b451-862745dc0ab4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.progress-bar > .wizard-step-item-title",
+      "targets": [
+        ["css=.progress-bar > .wizard-step-item-title", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1 基本設定')]", "xpath:innerText"]
+      ],
+      "value": "1 基本設定"
+    }, {
+      "id": "58c2058a-ce5b-4c35-8252-d9279d7f996c",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [
+        ["id=UserUsername", "id"],
+        ["name=data[User][username]", "name"],
+        ["css=#UserUsername", "css:finder"],
+        ["xpath=//input[@id='UserUsername']", "xpath:attributes"],
+        ["xpath=//form[@id='UserBasicForm']/div[2]/div[2]/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_test1_login_id}"
+    }, {
+      "id": "0471dc5d-79bc-4397-8cbd-d3ebd1383196",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [
+        ["id=UserPassword", "id"],
+        ["name=data[User][password]", "name"],
+        ["css=#UserPassword", "css:finder"],
+        ["xpath=//input[@id='UserPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='UserBasicForm']/div[2]/div[2]/div/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_test1_password}"
+    }, {
+      "id": "18fe515d-3695-47b3-aeac-d81104463141",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPasswordAgain",
+      "targets": [
+        ["id=UserPasswordAgain", "id"],
+        ["name=data[User][password_again]", "name"],
+        ["css=#UserPasswordAgain", "css:finder"],
+        ["xpath=//input[@id='UserPasswordAgain']", "xpath:attributes"],
+        ["xpath=//form[@id='UserBasicForm']/div[2]/div[2]/div/div[2]/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/input[2]", "xpath:position"]
+      ],
+      "value": "${user_test1_password}"
+    }, {
+      "id": "022cb725-9361-4d5e-a17a-540c15f84276",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserHandlename",
+      "targets": [
+        ["id=UserHandlename", "id"],
+        ["name=data[User][handlename]", "name"],
+        ["css=#UserHandlename", "css:finder"],
+        ["xpath=//input[@id='UserHandlename']", "xpath:attributes"],
+        ["xpath=//form[@id='UserBasicForm']/div[2]/div[2]/div/div[2]/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_test1_handle}"
+    }, {
+      "id": "4ee3229c-fd38-435e-803d-2537eb7bdb93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.glyphicon-chevron-right:nth-child(1)",
+      "targets": [
+        ["css=.glyphicon-chevron-right:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='UserBasicForm']/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b23f6030-61e8-4574-b2cf-404f9b028d2d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.progress-bar > .wizard-step-item-title",
+      "targets": [
+        ["css=.progress-bar > .wizard-step-item-title", "css:finder"],
+        ["xpath=//div[@id='container-main']/article/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2 参加ルームの選択')]", "xpath:innerText"]
+      ],
+      "value": "2 参加ルームの選択"
+    }, {
+      "id": "6c2c2077-9b8d-4e4c-b711-49c596c2a573",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=パブリック",
+      "targets": [
+        ["linkText=パブリック", "linkText"],
+        ["css=.nav-pills > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'パブリック')]", "xpath:link"],
+        ["xpath=//div[@id='container-main']/article/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#user-manager-public-space')]", "xpath:href"],
+        ["xpath=//article/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'パブリック')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20217a28-25fd-41fa-bd44-36ea226921c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#user-manager-public-space .text-center:nth-child(5) > label",
+      "targets": [
+        ["css=#user-manager-public-space .text-center:nth-child(5) > label", "css:finder"],
+        ["xpath=//div[@id='user-manager-public-space']/article/div/table/tbody/tr/td[5]/label", "xpath:idRelative"],
+        ["xpath=//td[5]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c289c34-9c2a-4fe6-bf07-257a437706aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=コミュニティ",
+      "targets": [
+        ["linkText=コミュニティ", "linkText"],
+        ["css=.nav-pills > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'コミュニティ')]", "xpath:link"],
+        ["xpath=//div[@id='container-main']/article/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#user-manager-room-space')]", "xpath:href"],
+        ["xpath=//article/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'コミュニティ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32b442e2-4ed1-4cf5-b5a5-f8eda65342c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#user-manager-room-space .text-center:nth-child(5) > label",
+      "targets": [
+        ["css=#user-manager-room-space .text-center:nth-child(5) > label", "css:finder"],
+        ["xpath=//div[@id='user-manager-room-space']/article/div/table/tbody/tr/td[5]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/article/div/table/tbody/tr/td[5]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1718a5ee-8c6d-4950-8cc8-eb33917eba2b",
+      "comment": "",
+      "command": "click",
+      "target": "name=save",
+      "targets": [
+        ["name=save", "name"],
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//button[@name='save']", "xpath:attributes"],
+        ["xpath=//form[@id='RolesRoomsUserUserRolesRoomsForm']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'決定 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4ab19c5-db00-4203-9ccf-53cd8073dfe0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='container-main']/article/div[3]/table/tbody/tr[2]/td/a",
+      "targets": [
+        ["linkText=テストユーザ1", "linkText"],
+        ["css=tr:nth-child(2) .ng-scope", "css:finder"],
+        ["xpath=//a[contains(text(),'テストユーザ1')]", "xpath:link"],
+        ["xpath=//div[@id='container-main']/article/div[3]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//tr[2]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,' テストユーザ1')]", "xpath:innerText"]
+      ],
+      "value": "${user_test1_handle}"
+    }, {
+      "id": "bbbe34fe-3e73-4f34-87bd-a75229c41bd2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=管理終了",
+      "targets": [
+        ["linkText=管理終了", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理終了')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/release_check/nc3-3-3/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理終了')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb7de7e1-797c-4992-acac-8ea3bd54ef06",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=管理",
+      "targets": [
+        ["linkText=管理", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'管理')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/control_panel/control_panel/index/2?frame_id=2&page_id=4')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'管理')]", "xpath:innerText"]
+      ],
+      "value": "管理"
+    }, {
+      "id": "a12a4a74-e70a-4d40-9ed1-48afdec79f04",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82c21d21-534e-4d20-a073-4ea47499e15e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": "ログイン"
+    }]
+  }, {
+    "id": "984b5fe9-092f-4228-8991-22e8a33ea892",
+    "name": "08.テストユーザ1：ログイン",
+    "commands": [{
+      "id": "ee5ab92f-b6c8-42c2-be34-d7b6487636e0",
+      "comment": "",
+      "command": "open",
+      "target": "${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d7883b2-fce8-4712-a087-1a140cc8b24f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1386x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e77ab490-24ca-49e7-bce3-33e1b477a4e3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "451bd6b1-8cf6-43fd-a41b-66bcd4dc03fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [
+        ["id=UserUsername", "id"],
+        ["name=data[User][username]", "name"],
+        ["css=#UserUsername", "css:finder"],
+        ["xpath=//input[@id='UserUsername']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${user_test1_login_id}"
+    }, {
+      "id": "1b9fbea5-4238-4e80-bd4c-eb5e12789b4d",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [
+        ["id=UserPassword", "id"],
+        ["name=data[User][password]", "name"],
+        ["css=#UserPassword", "css:finder"],
+        ["xpath=//input[@id='UserPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${user_test1_password}"
+    }, {
+      "id": "c1f841eb-82b4-4a4b-8359-4df63da5be1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='AuthGeneral']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa23dafe-e089-4260-bf1a-acca6815fd2e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=.nav > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/logout')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": "ログアウト"
+    }, {
+      "id": "1bdba393-01b8-41e5-811e-f3c674f239b4",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='nc-system-header-navbar']/ul/li[4]/a",
+      "targets": [
+        ["linkText=テストユーザ1", "linkText"],
+        ["css=.hidden-sm > .ng-scope", "css:finder"],
+        ["xpath=//a[contains(text(),'テストユーザ1')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' テストユーザ1')]", "xpath:innerText"]
+      ],
+      "value": "${user_test1_handle}"
+    }, {
+      "id": "7a99cfb0-5fc1-4d5d-92a3-2d873de19f29",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログアウト",
+      "targets": [
+        ["linkText=ログアウト", "linkText"],
+        ["css=.nav > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログアウト')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/logout')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログアウト')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "762a2b64-6ce5-4481-8830-4b6daa7cac06",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログイン",
+      "targets": [
+        ["linkText=ログイン", "linkText"],
+        ["css=li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ログイン')]", "xpath:link"],
+        ["xpath=//div[@id='nc-system-header-navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/release_check/nc3-3-3/auth/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ログイン')]", "xpath:innerText"]
+      ],
+      "value": "ログイン"
+    }]
+  }, {
+    "id": "e2a0d9f4-bbf3-4ad5-b99c-f90882bfe0dd",
+    "name": "00.環境変数",
+    "commands": [{
+      "id": "66e4839d-ca2f-4ac0-b25e-b5f361d9adac",
+      "comment": "",
+      "command": "store",
+      "target": "/release_check/nc3-3-3/",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "ec7859a2-c942-45fe-a194-595305fc630e",
+      "comment": "",
+      "command": "store",
+      "target": "nc3_3_3",
+      "targets": [],
+      "value": "dbname"
+    }, {
+      "id": "32de152f-2fb0-4d28-845a-5240422ea42d",
+      "comment": "",
+      "command": "store",
+      "target": "root",
+      "targets": [],
+      "value": "dbuser"
+    }, {
+      "id": "ed581b7c-8df2-41b1-a0fd-1f7548a0a0ae",
+      "comment": "",
+      "command": "store",
+      "target": "root",
+      "targets": [],
+      "value": "dbpassword"
+    }, {
+      "id": "1e76551d-ec93-4860-9a6b-8cd19c909e81",
+      "comment": "",
+      "command": "store",
+      "target": "nc_",
+      "targets": [],
+      "value": "dbprefix"
+    }, {
+      "id": "398ab902-50c0-46ef-8c29-dafb420fb3e3",
+      "comment": "",
+      "command": "store",
+      "target": "admin",
+      "targets": [],
+      "value": "user_system_login_id"
+    }, {
+      "id": "642da2c5-2f79-4f7f-9778-e10fe09ea284",
+      "comment": "",
+      "command": "store",
+      "target": "admin",
+      "targets": [],
+      "value": "user_system_password"
+    }, {
+      "id": "3a7f2010-6163-4f58-8ded-28335e1435fd",
+      "comment": "",
+      "command": "store",
+      "target": "システム管理者",
+      "targets": [],
+      "value": "user_system_handle"
+    }, {
+      "id": "d84ba2b7-b5a2-4450-9d5e-b504e86ec64f",
+      "comment": "",
+      "command": "store",
+      "target": "test1",
+      "targets": [],
+      "value": "user_test1_login_id"
+    }, {
+      "id": "ad7555bd-aa83-4b7f-9b8b-3f0ef2cd17b9",
+      "comment": "",
+      "command": "store",
+      "target": "test1",
+      "targets": [],
+      "value": "user_test1_password"
+    }, {
+      "id": "0bb78dba-1b5f-4777-a8e2-373a1ae38850",
+      "comment": "",
+      "command": "store",
+      "target": "テストユーザ1",
+      "targets": [],
+      "value": "user_test1_handle"
+    }]
+  }],
+  "suites": [{
+    "id": "a0fdc2ce-6b24-4b3c-8410-e1b6ca9dc73e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9459b46f-bab5-43f2-9d3a-d390611c14e7"]
+  }],
+  "urls": ["http://html.local:9096/"],
+  "plugins": []
+}
