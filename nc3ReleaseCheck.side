@@ -1939,42 +1939,42 @@
       "id": "66e4839d-ca2f-4ac0-b25e-b5f361d9adac",
       "comment": "",
       "command": "store",
-      "target": "/release_check/nc3-3-3-new/",
+      "target": "/release_check/nc3-3-4-new/",
       "targets": [],
       "value": "url_new"
     }, {
       "id": "85f2f201-1cc7-4dcb-a00f-7ec33797b0f7",
       "comment": "",
       "command": "store",
-      "target": "/release_check/nc3-3-3-upd/",
+      "target": "/release_check/nc3-3-4-upd/",
       "targets": [],
       "value": "url_upd"
     }, {
       "id": "e8560327-c805-46b5-885b-939fea9b7fdd",
       "comment": "",
       "command": "store",
-      "target": "nc3_3_3_new",
+      "target": "nc3_3_4_new",
       "targets": [],
       "value": "dbname_new"
     }, {
       "id": "ec7859a2-c942-45fe-a194-595305fc630e",
       "comment": "",
       "command": "store",
-      "target": "nc3_3_3_upd",
+      "target": "nc3_3_4_upd",
       "targets": [],
       "value": "dbname_upd"
     }, {
       "id": "cd376369-1bf9-4f89-ae5b-27144b58c66d",
       "comment": "",
       "command": "store",
-      "target": "3.3.3",
+      "target": "3.3.4",
       "targets": [],
       "value": "newversion"
     }, {
       "id": "1c76c477-1888-49a7-8ed8-e874be84461a",
       "comment": "",
       "command": "store",
-      "target": "3.3.2",
+      "target": "3.3.3",
       "targets": [],
       "value": "oldversion"
     }, {
