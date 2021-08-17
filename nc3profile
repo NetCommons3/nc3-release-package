@@ -6,13 +6,18 @@
 
 CURDIR=`pwd`; export CURDIR
 
+NC3VERSION="3.3.4" export NC3VERSION
+OLDVERSION="3.3.3" export OLDVERSION
+DOCKERVERSION="1.0" export DOCKERVERSION
+
+GITAUTH="(Github ID):(Github PW)"
+
 CMDCMPOSER="`which composer`"; export CMDCMPOSER
 if [ "${CMDCMPOSER}" = "" ]; then
 	CMDCMPOSER="php composer.phar"; export CMDCMPOSER
 fi
 ZIPCMD="`which zip`"; export ZIPCMD
 
-NC3VERSION="3.3.3" export NC3VERSION
 PROJECTNAME=NetCommons3
 
 GITZIPFILE=NetCommons3-$NC3VERSION export GITZIPFILE
@@ -20,9 +25,9 @@ ZIPDIRNAME=NetCommons3 export ZIPDIRNAME
 ZIPFILE=NetCommons-$NC3VERSION export ZIPFILE
 DBNAME=nc${NC3VERSION//./_}; export DBNAME
 PKGNAME=nc${NC3VERSION//./-}; export PKGNAME
+OLDPKGNAME=nc${OLDVERSION//./-}; export OLDPKGNAME
 
-
-GITAUTH="(Github ID):(Github PW)"
+CHKDIR=/var/www/NetCommons3/release_check/$PKGNAME; export CHKDIR
 
 DBHOST=localhost; export DBHOST
 DBUSER=root; export DBUSER
@@ -32,11 +37,10 @@ GITURL=https://github.com/NetCommons3; export GITURL
 GITAUTHURL=https://$GITAUTH@github.com/NetCommons3; export GITURL
 
 PKGDIR=${CURDIR}/package/$PKGNAME; export PKGDIR
-CHKDIR=${CURDIR}/check/$PKGNAME; export CHKDIR
-#CHKDIR=/var/www/html/release_check/$PKGNAME; export CHKDIR
 WORKDIR=${CURDIR}/work/$PKGNAME; export WORKDIR
 MASTERDIR=${CURDIR}/$PROJECTNAME; export MASTERDIR
-LOGFILE=${CURDIR}/start$NC3VERSION.log; export LOGFILE
+LOGFILE=${CURDIR}/logs/start$NC3VERSION.log; export LOGFILE
+DOCKERDIR=${CURDIR}/work/nc3app-docker; export DOCKERDIR
 
 execute() {
 	echo "[releases shell]$ $1"
@@ -44,4 +48,15 @@ execute() {
 		$1
 		echo ""
 	fi
+}
+
+waiting() {
+	echo ""
+	echo -n "waiting"
+	for ((i=0; i<${1}; i++)); do
+		sleep ${2}
+		echo -n "."
+	done
+	echo ""
+	echo ""
 }
