@@ -60,33 +60,33 @@ bash shells/createCheckNC3.sh
 
 SeleniumIDEは、ChromeやFirefoxのアドオンでインストールできます。<br>
 <br>
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-1.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-1.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-1.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-1.png" width="320px">
 </a><br>
 
 #### 5-3) SeleniumIDEの「00.環境変数」を適宜修正する
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-2.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-2.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-2.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-2.png" width="320px">
 </a><br>
 
 #### 5-4) SeleniumIDEのTest suites「01-新規インストール」を実行する
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-3.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-3.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-3.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-3.png" width="320px">
 </a><br>
 
 ※テスト中、Wysiwygのテストで画像を挿入するステップがあります。(下記の画像の参照)<br>
 画像挿入は、自動ではできないため、手動で画像を選択してください。<br>
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-4.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-4.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-4.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-4.png" width="320px">
 </a><br>
 
 #### 5-5) SeleniumIDEのTest suites「02-前verインストール」を実行する
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-5.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-5.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-5.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-5.png" width="320px">
 </a><br>
 
 ※5-4)同様に、テスト中、Wysiwygのテストで画像を挿入するステップがあります。
@@ -101,8 +101,8 @@ bash shells/updateCheckNC3.sh
 
 #### 5-7) SeleniumIDEのTest suites「03-前verからアップグレード」を実行する
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-6.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-6.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-6.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/SeleniumIDE-6.png" width="320px">
 </a><br>
 
 ※5-4)同様に、テスト中、Wysiwygのテストで画像を挿入するステップがあります。
@@ -113,21 +113,21 @@ bash shells/updateCheckNC3.sh
 
 #### 6-1) リリースラベルを作成する
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-1.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-1.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-1.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-1.png" width="320px">
 </a><br>
 
 #### 6-2) リリースラベルを付与する
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-2.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-2.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-2.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-2.png" width="320px">
 </a><br>
 
 
 #### 6-3) 完了ラベルをcloseする
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-3.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-3.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-3.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/github-3.png" width="320px">
 </a><br>
 
 
@@ -137,8 +137,8 @@ bash shells/updateCheckNC3.sh
 
 https://www.netcommons.org/NetCommons3/download
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-1.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-1.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-1.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-1.png" width="320px">
 </a><br>
 
 
@@ -146,8 +146,8 @@ https://www.netcommons.org/NetCommons3/download
 
 https://www.netcommons.org/NetCommons3/download
 
-<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-2.PNG">
-<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-2.PNG" width="320px">
+<a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-2.png">
+<img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-2.png" width="320px">
 </a><br>
 
 
