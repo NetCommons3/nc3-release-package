@@ -135,7 +135,7 @@ bash shells/updateCheckNC3.sh
 
 #### 7-1) nc3-release-package/packageディレクトリにあるNetCommons-3.x.x.zipファイルをキャビネットに上げる
 
-https://www.netcommons.org/NetCommons3/download
+https://www.netcommons.org/NetCommons3/download#!#frame-63
 
 <a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-1.png">
 <img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-1.png" width="320px">
@@ -144,7 +144,7 @@ https://www.netcommons.org/NetCommons3/download
 
 #### 7-2) ダウンロードページのお知らせを修正する
 
-https://www.netcommons.org/NetCommons3/download
+https://www.netcommons.org/NetCommons3/download#!#frame-82
 
 <a href="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-2.png">
 <img src="https://raw.githubusercontent.com/NetCommons3/nc3-release-package/main/img/nc3-org-2.png" width="320px">
