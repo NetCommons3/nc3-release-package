@@ -46,6 +46,9 @@ cd nc3-release-package
 bash start_app.sh
 ````
 
+#### ※手動でnc3app-dockerのバージョンをアップする
+
+https://github.com/NetCommons3/nc3app-docker
 
 ### 5. SeleniumIDEでブラウザテストを行う
 
