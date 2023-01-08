@@ -14,15 +14,16 @@
 
 
 ````
- 9   NC3VERSION="3.3.4" export NC3VERSION
-10   OLDVERSION="3.3.3" export OLDVERSION
-11   DOCKERVERSION="1.0" export DOCKERVERSION
-12
-13   GITAUTH="(Github ID):(Github PW)"
+ 9   NC3VERSION="3.3.5" export NC3VERSION
+10   OLDVERSION="3.3.4" export OLDVERSION
+11   DOCKERVERSION="1.1" export DOCKERVERSION
 ・・・
-29
-30   CHKDIR=/var/www/NetCommons3/release_check/$PKGNAME; export CHKDIR
-31
+13
+14   GITAUTH="(Github ID):(Github PW)"
+・・・
+30
+31   CHKDIR=/var/www/NetCommons3/release_check/$PKGNAME; export CHKDIR
+32
 ````
 
 ※(Github PW)は、githubのアクセストークンを使用してください。<br>
@@ -162,3 +163,34 @@ https://www.netcommons.org/news
 
 
 #### 7-4) 各ページのリンクを確認する
+
+-----
+
+## 差分ファイルのみ作成する場合
+
+### 事前準備
+
+#### 1. 各プラグインのタグ付けは手動で終わらせておくこと
+
+#### 2. 設定ファイル(nc3profile)を修正
+
+````
+ 9   NC3VERSION="3.3.5" export NC3VERSION
+・・・
+12   PATCHVERSION="3.3.5.20230107" export PATCHVERSION
+13
+14   GITAUTH="(Github ID):(Github PW)"
+・・・
+30
+31   CHKDIR=/var/www/NetCommons3/release_check/$PKGNAME; export CHKDIR
+````
+
+#### 3. start_patch.shの実行
+
+````shell
+cd nc3-release-package
+bash start_patch.sh
+
+# (除外するプラグインが存在する場合、カンマ区切りでプラグイン名を指定する)
+bash start_patch.sh AccessCounters,Blogs
+````
