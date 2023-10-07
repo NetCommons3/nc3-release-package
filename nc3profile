@@ -49,9 +49,10 @@ DBNAME=nc${NC3VERSION//./_}; export DBNAME
 PKGNAME=nc${NC3VERSION//./-}; export PKGNAME
 OLDPKGNAME=nc${OLDVERSION//./-}; export OLDPKGNAME
 
-if [ "${CHKDIR}" = "" ]; then
-    CHKDIR=/var/www/NetCommons3/release_check/$PKGNAME; export CHKDIR
+if [ "${CHKBASEDIR}" = "" ]; then
+    CHKBASEDIR="/var/www/NetCommons3/release_check"
 fi
+CHKDIR=$CHKBASEDIR/$PKGNAME; export CHKDIR
 
 DBHOST=localhost; export DBHOST
 DBUSER=root; export DBUSER
