@@ -36,21 +36,20 @@ execute "${CMDCMPOSER} install --no-dev"
 # Githubにプッシュ     #
 ########################
 
-execute "git add composer.lock"
-execute "git add app/VERSION"
 
-execute "git commit -m\"NetCommons $NC3VERSION released.\"" "no-exec"
-git commit -m"NetCommons $NC3VERSION released."
-echo ""
+if [ "${MODE}" = "prod" ]; then
+	execute "git add composer.lock"
+	execute "git add app/VERSION"
 
-#TODO: 後でコメントアウト消す
-#execute "git push"
-#
-#execute "git tag $NC3VERSION"
-#execute "git push origin $NC3VERSION"
+	execute "git commit -m\"NetCommons $NC3VERSION released.\"" "no-exec"
+	git commit -m"NetCommons $NC3VERSION released."
+	echo ""
 
-execute "git tag $NC3VERSION"
-execute "git push origin $NC3VERSION"
+	execute "git push"
+
+	execute "git tag $NC3VERSION"
+	execute "git push origin $NC3VERSION"
+fi
 
 
 #-- end --

@@ -7,6 +7,25 @@
 PROFILEDIR=$(cd $(dirname $(dirname $0)); pwd)
 source ${PROFILEDIR}/nc3profile
 
+if [ ! -d $PKGDIR/$PROJECTNAME ]; then
+	echo "$PKGDIR/$PROJECTNAMが存在しません。"
+	exit 1
+fi
+if [ -d $CHKDIR-new ]; then
+	execute "rm -Rf $CHKDIR-new"
+fi
+
+
+if [ -d $PKGDIR/NetCommons3-$OLDVERSION ]; then
+	execute "rm -Rf $PKGDIR/NetCommons3-$OLDVERSION"
+fi
+if [ -d $PKGDIR/$OLDVERSION ]; then
+	execute "rm -Rf $PKGDIR/$OLDVERSION"
+fi
+#if [ -f $OLDVERSION.zip ]; then
+#	execute "rm -f $OLDVERSION.zip"
+#fi
+
 
 #######################################
 # 動作確認サイトの構築
@@ -17,19 +36,10 @@ echo "+----------------------------------------+"
 echo " 動作確認サイトの構築($NC3VERSION)"
 echo "+----------------------------------------+"
 
-if [ ! -d $PKGDIR/$PROJECTNAME ]; then
-	echo "$PKGDIR/$PROJECTNAMが存在しません。"
-	exit 1
-fi
-if [ -d $CHKDIR-new ]; then
-	execute "rm -Rf $CHKDIR-new"
-fi
-
 execute "cp -Rpf $PKGDIR/$PROJECTNAME $CHKDIR-new"
 
 execute "mysql -u${DBUSER} -p${DBPASS} -e \"drop database if exists ${DBNAME}_new;\"" "no-exec"
 mysql -u${DBUSER} -p${DBPASS} -e "drop database if exists ${DBNAME}_new;"
-
 
 echo ""
 echo "+----------------------------------------+"
@@ -38,17 +48,15 @@ echo "+----------------------------------------+"
 
 execute "cd $PKGDIR"
 
-if [ -d NetCommons3-$OLDVERSION ]; then
-	execute "rm -Rf NetCommons3-$OLDVERSION"
-fi
-if [ -f $OLDVERSION.zip ]; then
-	execute "rm -f $OLDVERSION.zip"
+if [ ! -f $OLDVERSION.zip ]; then
+	execute "wget -O $OLDVERSION.zip https://www.netcommons.org/cabinets/cabinet_files/download/50/${OLDVER_CABINET_KEY}?frame_id=63"
 fi
 
-execute "wget $GITURL/$PROJECTNAME/archive/$OLDVERSION.zip"
-
-execute "unzip $OLDVERSION.zip"
+execute "unzip $OLDVERSION.zip -d $OLDVERSION" "no-exec"
+unzip $OLDVERSION.zip -d $OLDVERSION > /dev/null
 execute "rm -f $OLDVERSION.zip"
+
+execute "mv $OLDVERSION/NetCommons3 ./NetCommons3-$OLDVERSION"
 
 execute "cd NetCommons3-$OLDVERSION"
 execute "${CMDCMPOSER} install --no-dev"

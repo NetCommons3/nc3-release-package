@@ -7,6 +7,10 @@
 PROFILEDIR=$(cd $(dirname $0); pwd)
 source ${PROFILEDIR}/nc3profile
 
+if [ ! "${MODE}" = "" ]; then
+	#MODE=prod; export MODE
+	MODE=test; export MODE
+fi
 
 ################################
 # NetCommons3パッケージの作成
@@ -24,13 +28,13 @@ waiting 10 10
 execute "bash $CURDIR/shells/createNC3Package.sh"
 execute "cd $CURDIR"
 
-## waiting 100秒
-#waiting 10 10
-#
-## 動作確認サイトの構築
-#execute "bash $CURDIR/shells/createCheckNC3.sh"
-#execute "cd $CURDIR"
-#
+# waiting 100秒
+waiting 10 10
+
+# 動作確認サイトの構築
+execute "bash $CURDIR/shells/createCheckNC3.sh"
+#execute "bash $CURDIR/shells/updateCheckNC3.sh"
+execute "cd $CURDIR"
 
 echo "##################################"
 echo "# End Shell(`date '+%y-%m-%d %H:%M:%S'`)   #"

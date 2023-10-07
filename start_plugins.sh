@@ -67,6 +67,8 @@ do
 		"Upload" ) continue ;;
 		* )
 
+		count=$(expr $count + 1)
+
 		surplus=$(( $count % 16 ))
 		if [ "$surplus" = "0" ]; then
 			# 初回と16件毎にDockerイメージを作り直す
@@ -76,10 +78,8 @@ do
 			execute "cd $CURDIR"
 			revision=$(expr $revision + 1)
 			# waiting 720秒
-			waiting 72 10
+			waiting 3 10
 		fi
-
-		count=$(expr $count + 1)
 
 		# 最新のプラグインを取得
 		if [ -d $WORKDIR/$plugin ]; then
@@ -97,10 +97,15 @@ do
 			# waiting 960秒
 			waiting 48 20
 		else
-			# waiting 250秒
-			waiting 25 10
-		fi
+			# waiting 300秒
+			waiting 30 10
 
+			surplus=$(( $count % 5 ))
+			if [ "$surplus" = "0" ]; then
+				# waiting 30秒
+				waiting 30 10
+			fi
+		fi
 	esac
 done
 

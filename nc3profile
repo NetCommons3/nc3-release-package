@@ -5,13 +5,34 @@
 #
 
 CURDIR=`pwd`; export CURDIR
+#CURDIR=$(cd $(dirname $0); pwd)
 
-NC3VERSION="3.3.5" export NC3VERSION
-OLDVERSION="3.3.4" export OLDVERSION
-DOCKERVERSION="1.1" export DOCKERVERSION
-PATCHVERSION="$NC3VERSION.20230108" export PATCHVERSION
+if [ ! "${NC3VERSION}" = "" ]; then
+    NC3VERSION="3.3.6"; export NC3VERSION
+fi
+if [ ! "${OLDVERSION}" = "" ]; then
+    OLDVERSION="3.3.5"; export OLDVERSION
+fi
+if [ ! "${OLDVER_CABINET_KEY}" = "" ]; then
+    OLDVER_CABINET_KEY="9606f4ea3da30d888018d5cd2ea68fce" ; export OLDVER_CABINET_KEY
+fi
+if [ ! "${DOCKERVERSION}" = "" ]; then
+    DOCKERVERSION="1.2"; export DOCKERVERSION
+fi
+if [ ! "${PATCHNUM}" = "" ]; then
+    PATCHNUM="20230225"; export PATCHNUM
+fi
+PATCHVERSION="$NC3VERSION.$PATCHNUM"; export PATCHVERSION
 
-GITAUTH="(Github ID):(Github PW)"
+if [ ! "${GITID}" = "" ]; then
+    GITID="(Github ID)"; export GITID
+fi
+if [ ! "${GITPW}" = "" ]; then
+    GITPW="(Github PW)"; export GITPW
+fi
+
+GITAUTH="${GITID}:${GITPW}"
+COMPOSER_TOKEN=${GITPW}; export COMPOSER_TOKEN
 
 CMDCMPOSER="`which composer`"; export CMDCMPOSER
 if [ "${CMDCMPOSER}" = "" ]; then
@@ -21,14 +42,16 @@ ZIPCMD="`which zip`"; export ZIPCMD
 
 PROJECTNAME=NetCommons3
 
-GITZIPFILE=NetCommons3-$NC3VERSION export GITZIPFILE
-ZIPDIRNAME=NetCommons3 export ZIPDIRNAME
-ZIPFILE=NetCommons-$NC3VERSION export ZIPFILE
+GITZIPFILE=NetCommons3-$NC3VERSION; export GITZIPFILE
+ZIPDIRNAME=NetCommons3; export ZIPDIRNAME
+ZIPFILE=NetCommons-$NC3VERSION; export ZIPFILE
 DBNAME=nc${NC3VERSION//./_}; export DBNAME
 PKGNAME=nc${NC3VERSION//./-}; export PKGNAME
 OLDPKGNAME=nc${OLDVERSION//./-}; export OLDPKGNAME
 
-CHKDIR=/var/www/NetCommons3/release_check/$PKGNAME; export CHKDIR
+if [ "${CHKDIR}" = "" ]; then
+    CHKDIR=/var/www/NetCommons3/release_check/$PKGNAME; export CHKDIR
+fi
 
 DBHOST=localhost; export DBHOST
 DBUSER=root; export DBUSER
@@ -41,7 +64,7 @@ PKGDIR=${CURDIR}/package/$PKGNAME; export PKGDIR
 WORKDIR=${CURDIR}/work/$PKGNAME; export WORKDIR
 MASTERDIR=${CURDIR}/$PROJECTNAME; export MASTERDIR
 LOGFILE=${CURDIR}/logs/start$NC3VERSION.log; export LOGFILE
-DOCKERDIR=${CURDIR}/work/nc3app-docker; export DOCKERDIR
+DOCKERDIR=${CURDIR}/nc3app-docker; export DOCKERDIR
 
 execute() {
 	echo "[releases shell]$ $1"

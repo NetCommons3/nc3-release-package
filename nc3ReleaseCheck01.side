@@ -1947,42 +1947,42 @@
       "id": "66e4839d-ca2f-4ac0-b25e-b5f361d9adac",
       "comment": "",
       "command": "store",
-      "target": "/release_check/nc3-3-5-new/",
+      "target": "/release_check/nc3-3-6-new/",
       "targets": [],
       "value": "url_new"
     }, {
       "id": "85f2f201-1cc7-4dcb-a00f-7ec33797b0f7",
       "comment": "",
       "command": "store",
-      "target": "/release_check/nc3-3-5-upd/",
+      "target": "/release_check/nc3-3-6-upd/",
       "targets": [],
       "value": "url_upd"
     }, {
       "id": "e8560327-c805-46b5-885b-939fea9b7fdd",
       "comment": "",
       "command": "store",
-      "target": "nc3_3_5_new",
+      "target": "nc3_3_6_new",
       "targets": [],
       "value": "dbname_new"
     }, {
       "id": "ec7859a2-c942-45fe-a194-595305fc630e",
       "comment": "",
       "command": "store",
-      "target": "nc3_3_5_upd",
+      "target": "nc3_3_6_upd",
       "targets": [],
       "value": "dbname_upd"
     }, {
       "id": "cd376369-1bf9-4f89-ae5b-27144b58c66d",
       "comment": "",
       "command": "store",
-      "target": "3.3.5",
+      "target": "3.3.6",
       "targets": [],
       "value": "newversion"
     }, {
       "id": "1c76c477-1888-49a7-8ed8-e874be84461a",
       "comment": "",
       "command": "store",
-      "target": "3.3.4",
+      "target": "3.3.5",
       "targets": [],
       "value": "oldversion"
     }, {
@@ -2010,7 +2010,7 @@
       "id": "664600f5-1da4-4af8-a5fc-3848660289c7",
       "comment": "",
       "command": "store",
-      "target": "Z:\\NetCommons3\\nc3-release-package\\テストimage.jpeg",
+      "target": "Y:\\NetCommons3\\nc3-release-package\\テストimage.jpeg",
       "targets": [],
       "value": "image_path"
     }, {

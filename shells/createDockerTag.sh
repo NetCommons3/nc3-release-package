@@ -29,9 +29,12 @@ if [ ! -d $DOCKERDIR ]; then
 	execute "git clone $GITAUTHURL/nc3app-docker.git $DOCKERDIR"
 fi
 execute "cd $DOCKERDIR"
-execute "git pull"
 
-execute "git tag v${DOCKERVERSION}.${revision}"
-execute "git push origin v${DOCKERVERSION}.${revision}"
+# Dockerを作成するGithubActionsが動かなくなったためローカルで作成する
+#execute "git pull"
+#
+#execute "git tag v${DOCKERVERSION}.${revision}"
+#execute "git push origin v${DOCKERVERSION}.${revision}"
+execute "bash dockerhub-build-push.sh"
 
 #-- end --
