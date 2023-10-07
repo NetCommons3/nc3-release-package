@@ -59,14 +59,14 @@
       "id": "32de152f-2fb0-4d28-845a-5240422ea42d",
       "comment": "",
       "command": "store",
-      "target": "root",
+      "target": "dbuser",
       "targets": [],
       "value": "dbuser"
     }, {
       "id": "ed581b7c-8df2-41b1-a0fd-1f7548a0a0ae",
       "comment": "",
       "command": "store",
-      "target": "root",
+      "target": "dbpassword",
       "targets": [],
       "value": "dbpassword"
     }, {
