@@ -7,27 +7,27 @@
 CURDIR=`pwd`; export CURDIR
 #CURDIR=$(cd $(dirname $0); pwd)
 
-if [ ! "${NC3VERSION}" = "" ]; then
+if [ "${NC3VERSION}" = "" ]; then
     NC3VERSION="3.3.6"; export NC3VERSION
 fi
-if [ ! "${OLDVERSION}" = "" ]; then
+if [ "${OLDVERSION}" = "" ]; then
     OLDVERSION="3.3.5"; export OLDVERSION
 fi
-if [ ! "${OLDVER_CABINET_KEY}" = "" ]; then
+if [ "${OLDVER_CABINET_KEY}" = "" ]; then
     OLDVER_CABINET_KEY="9606f4ea3da30d888018d5cd2ea68fce" ; export OLDVER_CABINET_KEY
 fi
-if [ ! "${DOCKERVERSION}" = "" ]; then
+if [ "${DOCKERVERSION}" = "" ]; then
     DOCKERVERSION="1.2"; export DOCKERVERSION
 fi
-if [ ! "${PATCHNUM}" = "" ]; then
+if [ "${PATCHNUM}" = "" ]; then
     PATCHNUM="20230225"; export PATCHNUM
 fi
 PATCHVERSION="$NC3VERSION.$PATCHNUM"; export PATCHVERSION
 
-if [ ! "${GITID}" = "" ]; then
+if [ "${GITID}" = "" ]; then
     GITID="(Github ID)"; export GITID
 fi
-if [ ! "${GITPW}" = "" ]; then
+if [ "${GITPW}" = "" ]; then
     GITPW="(Github PW)"; export GITPW
 fi
 
@@ -54,9 +54,15 @@ if [ "${CHKBASEDIR}" = "" ]; then
 fi
 CHKDIR=$CHKBASEDIR/$PKGNAME; export CHKDIR
 
-DBHOST=localhost; export DBHOST
-DBUSER=root; export DBUSER
-DBPASS=root; export DBPASS
+if [ "${DBHOST}" = "" ]; then
+    DBHOST=localhost; export DBHOST
+fi
+if [ "${DBUSER}" = "" ]; then
+    DBUSER=root; export DBUSER
+fi
+if [ "${DBPASS}" = "" ]; then
+    DBPASS=root; export DBPASS
+fi
 
 GITURL=https://github.com/NetCommons3; export GITURL
 GITAUTHURL=https://$GITAUTH@github.com/NetCommons3; export GITURL
@@ -65,21 +71,45 @@ PKGDIR=${CURDIR}/package/$PKGNAME; export PKGDIR
 WORKDIR=${CURDIR}/work/$PKGNAME; export WORKDIR
 MASTERDIR=${CURDIR}/$PROJECTNAME; export MASTERDIR
 LOGFILE=${CURDIR}/logs/start$NC3VERSION.log; export LOGFILE
-DOCKERDIR=${CURDIR}/nc3app-docker; export DOCKERDIR
+if [ "${DOCKERDIR}" = "" ]; then
+    DOCKERDIR=${CURDIR}/nc3app-docker; export DOCKERDIR
+fi
 
 execute() {
-	echo "[releases shell]$ $1"
-	if [ "$2" = "" ]; then
-		$1
+    if [ "$2" = "force" ]; then
+        echo "[$MODE exec]$ $1"
+        $1
 		echo ""
-	fi
+    elif [ "$MODE" = "prod" ]; then
+        if [ "$2" = "no-exec" ]; then
+            echo "[$MODE exec]$ $1"
+        else
+            echo "[$MODE exec]$ $1"
+            $1
+            echo ""
+        fi
+    elif [ "$MODE" = "test" ]; then
+        if [ "$2" = "no-exec" ]; then
+            echo "[$MODE exec]$ $1"
+        elif [ "$2" = "" -o "$2" = "test" ]; then
+            echo "[$MODE exec]$ $1"
+            $1
+            echo ""
+        else
+            echo "[$MODE skip]$ $1"
+        fi
+    else
+        echo "[dry run]$ $1"
+    fi
 }
 
 waiting() {
 	echo ""
 	echo -n "waiting"
 	for ((i=0; i<${1}; i++)); do
-		sleep ${2}
+	    if [ "$MODE" = "prod" -o "$MODE" = "test" ]; then
+		    sleep ${2}
+		fi
 		echo -n "."
 	done
 	echo ""

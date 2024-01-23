@@ -49,7 +49,7 @@ echo "+----------------------------------------+"
 execute "cd $PKGDIR"
 
 if [ ! -f $OLDVERSION.zip ]; then
-	execute "wget -O $OLDVERSION.zip https://www.netcommons.org/cabinets/cabinet_files/download/50/${OLDVER_CABINET_KEY}?frame_id=63"
+	execute "wget -q -O $OLDVERSION.zip https://www.netcommons.org/cabinets/cabinet_files/download/50/${OLDVER_CABINET_KEY}?frame_id=63"
 fi
 
 execute "unzip $OLDVERSION.zip -d $OLDVERSION" "no-exec"

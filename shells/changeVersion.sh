@@ -39,6 +39,6 @@ execute "git commit -m\"change: Version number to $NC3VERSION\"" "no-exec"
 git commit -m"change: Version number to $NC3VERSION"
 echo ""
 
-execute "git push"
+execute "git push" "prod"
 
 #-- end --

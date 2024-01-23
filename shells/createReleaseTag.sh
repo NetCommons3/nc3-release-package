@@ -30,6 +30,6 @@ fi
 execute "cd $WORKDIR/$plugin"
 
 execute "git tag $NC3VERSION.0"
-execute "git push origin $NC3VERSION.0"
+execute "git push origin $NC3VERSION.0" "prod"
 
 #-- end --

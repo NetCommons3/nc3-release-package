@@ -7,6 +7,11 @@
 PROFILEDIR=$(cd $(dirname $0); pwd)
 source ${PROFILEDIR}/nc3profile
 
+if [ "${MODE}" = "" ]; then
+	#MODE=prod; export MODE
+	MODE=test; export MODE
+fi
+
 #######################################
 # 既にあるディレクトリ・ファイルの削除
 #######################################
@@ -39,6 +44,10 @@ if [ ! -d $MASTERDIR ]; then
 	execute "git clone $GITAUTHURL/$PROJECTNAME"
 fi
 execute "cd $PROJECTNAME"
+echo $NC3VERSION
+echo $DOCKERVERSION
+echo $OLDVER_CABINET_KEY
+echo $OLDVERSION
 
 execute "composer update"
 
@@ -74,7 +83,7 @@ do
 			# 初回と16件毎にDockerイメージを作り直す
 			# Dockerイメージの作成
 			execute "cd $CURDIR"
-			execute "bash $CURDIR/shells/createDockerTag.sh $revision"
+			execute "bash -l $CURDIR/shells/createDockerTag.sh" "prod"
 			execute "cd $CURDIR"
 			revision=$(expr $revision + 1)
 			# waiting 720秒
@@ -90,7 +99,7 @@ do
 		execute "cd $CURDIR"
 
 		# バージョンの変更
-		execute "bash $CURDIR/shells/changeVersion.sh $plugin"
+		execute "bash -l $CURDIR/shells/changeVersion.sh $plugin" "force"
 		execute "cd $CURDIR"
 
 		if [ "$plugin" = "Questionnaires" -o "$plugin" = "Quizzes" -o "$plugin" = "Registrations" ]; then
@@ -133,7 +142,7 @@ do
 		* )
 
 		# リリースタグ付け
-		execute "bash $CURDIR/shells/createReleaseTag.sh $plugin"
+		execute "bash -l $CURDIR/shells/createReleaseTag.sh $plugin" "force"
 		execute "cd $CURDIR"
 	esac
 done
@@ -143,7 +152,7 @@ waiting 15 10
 
 # 最後にDockerイメージを作成する
 execute "cd $CURDIR"
-execute "bash $CURDIR/shells/createDockerTag.sh $revision"
+execute "bash -l $CURDIR/shells/createDockerTag.sh" "prod"
 execute "cd $CURDIR"
 
 echo "##################################"

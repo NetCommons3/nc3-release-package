@@ -43,7 +43,6 @@ if [ "${MODE}" = "prod" ]; then
 
 	execute "git commit -m\"NetCommons $NC3VERSION released.\"" "no-exec"
 	git commit -m"NetCommons $NC3VERSION released."
-	echo ""
 
 	execute "git push"
 

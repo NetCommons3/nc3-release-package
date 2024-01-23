@@ -31,7 +31,7 @@ if [ "$MODE" = "prod" ]; then
 		execute "rm -f $NC3VERSION.zip"
 	fi
 
-	execute "wget $GITURL/$PROJECTNAME/archive/$NC3VERSION.zip"
+	execute "wget -q $GITURL/$PROJECTNAME/archive/$NC3VERSION.zip"
 
 	if [ ! -f $NC3VERSION.zip ]; then
 		echo "$NC3VERSION.zipファイルが存在しません"

@@ -13,15 +13,16 @@ source ${PROFILEDIR}/nc3profile
 # -> Dockerイメージの作成
 #######################################
 
-revision=$1
-if [ "${revision}" = "" ]; then
-	echo "リビジョンを指定してください。"
-	exit 1
-fi
+#revision=$1
+#if [ "${revision}" = "" ]; then
+#	echo "リビジョンを指定してください。"
+#	exit 1
+#fi
 
 echo ""
 echo "+----------------------------------------+"
-echo " リリースタグ付け(nc3app-docker:$DOCKERVERSION.${revision})"
+#echo " リリースタグ付け(nc3app-docker:$DOCKERVERSION.${revision})"
+echo " リリースタグ付け(nc3app-docker:$DOCKERVERSION)"
 echo "+----------------------------------------+"
 
 if [ ! -d $DOCKERDIR ]; then
@@ -35,6 +36,6 @@ execute "cd $DOCKERDIR"
 #
 #execute "git tag v${DOCKERVERSION}.${revision}"
 #execute "git push origin v${DOCKERVERSION}.${revision}"
-execute "bash dockerhub-build-push.sh"
+execute "bash -l dockerhub-build-push.sh" "force"
 
 #-- end --
