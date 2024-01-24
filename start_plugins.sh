@@ -51,12 +51,13 @@ echo $OLDVERSION
 
 execute "composer update"
 
-
-################################
-# バージョンアップ
-################################
+echo ""
+echo "################################"
+echo "# バージョンアップ"
+echo "################################"
 
 PLUGIN_NAME=`ls $MASTERDIR/app/Plugin`
+UPD_TAG_PLUGINS=""
 
 revision=0
 count=0
@@ -90,15 +91,40 @@ do
 			waiting 3 10
 		fi
 
+		echo ""
+		echo "*****************************************"
+		echo " 対象プラグイン($plugin)"
+		echo "*****************************************"
+
 		# 最新のプラグインを取得
 		if [ -d $WORKDIR/$plugin ]; then
 			execute "rm -Rf $WORKDIR/$plugin"
 		fi
 		execute "cd $WORKDIR"
 		execute "git clone $GITAUTHURL/$plugin.git"
-		execute "cd $CURDIR"
+
+		# 現バージョンの確認。更新する必要がなければ無視する
+		execute "cd $WORKDIR/$plugin"
+
+		tagDescribe=$(git describe --tags)
+		curTag=${tagDescribe%%-*}
+		curVersion=${curTag%.*}
+
+		echo "tagDescribe=$tagDescribe, curTag=$curTag, curVersion=$curVersion"
+
+		if [ "$curTag" = "$tagDescribe" -a "$curVersion" = "$NC3VERSION" ]; then
+			count=$(expr $count - 1)
+			echo ""
+			echo "Skip $plugin"
+			echo ""
+			execute "cd $CURDIR"
+			continue
+		fi
+
+		UPD_TAG_PLUGINS="$UPD_TAG_PLUGINS $plugin"
 
 		# バージョンの変更
+		execute "cd $CURDIR"
 		execute "bash -l $CURDIR/shells/changeVersion.sh $plugin" "force"
 		execute "cd $CURDIR"
 
@@ -121,12 +147,12 @@ done
 # waiting 100秒
 waiting 10 10
 
+echo "################################"
+echo "# リリースタグ付け"
+echo "################################"
 
-################################
-# リリースタグ付け
-################################
-
-for plugin in ${PLUGIN_NAME}
+UPD_TAG_PLUGINS="`echo $UPD_TAG_PLUGINS`"
+for plugin in ${UPD_TAG_PLUGINS}
 do
 	case "${plugin}" in
 		"empty" ) continue ;;

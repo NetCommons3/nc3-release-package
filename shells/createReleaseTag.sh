@@ -20,7 +20,7 @@ fi
 
 echo ""
 echo "+----------------------------------------+"
-echo " リリースタグ付け($plugin:$NC3VERSION.0)"
+echo " リリースタグ付け($plugin:$NC3VERSION)"
 echo "+----------------------------------------+"
 
 if [ ! -d $WORKDIR/$plugin ]; then
@@ -29,7 +29,24 @@ if [ ! -d $WORKDIR/$plugin ]; then
 fi
 execute "cd $WORKDIR/$plugin"
 
-execute "git tag $NC3VERSION.0"
-execute "git push origin $NC3VERSION.0" "prod"
+tagDescribe=$(git describe --tags)
+curTag=${tagDescribe%%-*}
+curVersion=${curTag%.*}
+curRev=${curTag##*.}
+
+echo "tagDescribe=$tagDescribe, curTag=$curTag, curVersion=$curVersion"
+echo ""
+
+if [ ! "$curTag" = "$tagDescribe" -o ! "$curVersion" = "$NC3VERSION" ]; then
+	if [ "$curVersion" = "$NC3VERSION" ]; then
+		nextRev=$(expr $curRev + 1)
+	else
+		nextRev=0
+	fi
+	execute "git tag $NC3VERSION.$nextRev"
+	execute "git push origin $NC3VERSION.$nextRev" "prod"
+else
+	echo "No change."
+fi
 
 #-- end --

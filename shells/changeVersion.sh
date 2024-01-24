@@ -36,9 +36,12 @@ echo ""
 execute "git add VERSION.txt"
 
 execute "git commit -m\"change: Version number to $NC3VERSION\"" "no-exec"
-git commit -m"change: Version number to $NC3VERSION"
+ret=`git commit -m"change: Version number to $NC3VERSION"`
+echo -e $ret
 echo ""
 
-execute "git push" "prod"
+if [ ! "`echo $ret | grep 'nothing to commit'`" ]; then
+	execute "git push" "prod"
+fi
 
 #-- end --

@@ -107,8 +107,10 @@ waiting() {
 	echo ""
 	echo -n "waiting"
 	for ((i=0; i<${1}; i++)); do
-	    if [ "$MODE" = "prod" -o "$MODE" = "test" ]; then
+	    if [ "$MODE" = "prod" ]; then
 		    sleep ${2}
+		elif [ "$MODE" = "test" ]; then
+			sleep 1
 		fi
 		echo -n "."
 	done
