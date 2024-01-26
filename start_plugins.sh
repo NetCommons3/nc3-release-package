@@ -128,18 +128,10 @@ do
 		execute "bash -l $CURDIR/shells/changeVersion.sh $plugin" "force"
 		execute "cd $CURDIR"
 
-		if [ "$plugin" = "Questionnaires" -o "$plugin" = "Quizzes" -o "$plugin" = "Registrations" ]; then
-			# waiting 960秒
-			waiting 48 20
-		else
-			# waiting 300秒
+		surplus=$(( $count % 5 ))
+		if [ "$surplus" = "0" ]; then
+			# waiting 30秒
 			waiting 30 10
-
-			surplus=$(( $count % 5 ))
-			if [ "$surplus" = "0" ]; then
-				# waiting 30秒
-				waiting 30 10
-			fi
 		fi
 	esac
 done

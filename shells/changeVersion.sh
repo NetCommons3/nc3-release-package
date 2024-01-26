@@ -42,6 +42,14 @@ echo ""
 
 if [ ! "`echo $ret | grep 'nothing to commit'`" ]; then
 	execute "git push" "prod"
+
+	if [ "$plugin" = "Questionnaires" -o "$plugin" = "Quizzes" -o "$plugin" = "Registrations" ]; then
+		# waiting 960秒
+		waiting 48 20
+	else
+		# waiting 300秒
+		waiting 30 10
+	fi
 fi
 
 #-- end --
