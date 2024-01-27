@@ -5426,20 +5426,6 @@
       "target": "",
       "targets": [],
       "value": ""
-    }, {
-      "id": "5f4a48b6-f96e-4ced-90e2-7d5279f4341b",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "da52618e-bbc6-4985-8134-58ba8ace01f2",
-      "comment": "",
-      "command": "store",
-      "target": "userDeleteTest=true",
-      "targets": [],
-      "value": "execMode"
     }]
   }, {
     "id": "0f1ed729-dd25-40a5-b653-dfb77da591c1",
@@ -5797,20 +5783,6 @@
       "target": "",
       "targets": [],
       "value": ""
-    }, {
-      "id": "ea70b7cd-263a-426b-85b3-6cd36b463988",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ba1e0973-b562-4577-8142-f99829f6f9f7",
-      "comment": "",
-      "command": "store",
-      "target": "uploadFileTest=true",
-      "targets": [],
-      "value": "execMode"
     }]
   }],
   "suites": [{
