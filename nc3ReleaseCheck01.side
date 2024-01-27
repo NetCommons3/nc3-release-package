@@ -7,17 +7,17 @@
     "id": "9459b46f-bab5-43f2-9d3a-d390611c14e7",
     "name": "02-01.インストール",
     "commands": [{
+      "id": "2c2b1ad6-3a6c-4b1d-baa5-b49c37d0d103",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "6d175b9f-50e7-474b-9a35-e06bf9719563",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a140b87e-78c5-4cb0-ac16-0fd176626c74",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -200,17 +200,17 @@
     "id": "136f73d2-13de-45cc-ae6d-afb43641a1e8",
     "name": "02-02.システム管理者：ログイン",
     "commands": [{
+      "id": "49d2e0e7-2971-4a82-af95-7dc18d48a234",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "2c34abd3-429f-4e2c-82ab-9a07671766f2",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "398777c0-592a-4c14-ab1c-9e74a542b98d",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -246,6 +246,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "101d9595-8e5b-4a28-b70e-17d6daabf0ec",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -288,17 +295,17 @@
     "id": "87211f50-172e-4fcb-8094-ccab99b10833",
     "name": "02-03.ページ",
     "commands": [{
+      "id": "6e49f55a-9c47-47ea-8c5d-4aaedf13e6ac",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "c3125d60-3798-406e-9330-5761d6845a1a",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "98da9261-7873-4c71-ba0c-3f9f948f8744",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -334,6 +341,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8217d4c-6f3e-46a1-8af1-31fdc8175802",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -537,17 +551,17 @@
     "id": "7793cdc2-df60-4772-aa4a-27a6ee5bd469",
     "name": "02-04.フレーム",
     "commands": [{
+      "id": "a31796b0-1fbe-4344-918a-8e4a553d0fba",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "8d42c70d-0e17-435c-a672-86a598fde9b0",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "9f84c847-51ca-44f6-be16-ada4d99e8259",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -583,6 +597,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96921f0a-d407-48b5-9adf-1ceb49f9933b",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -861,19 +882,19 @@
     }]
   }, {
     "id": "b7df37a3-693b-4872-9ae4-56fcb85c4e72",
-    "name": "02-05.お知らせ",
+    "name": "02-05-1.お知らせ",
     "commands": [{
+      "id": "cba75b55-59f9-467f-92ad-efa6dc48954c",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "722a4f75-8a67-4d4e-8d55-cf030dc7c7c8",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "087aea5e-8735-40e5-bf92-f5eb2c55903a",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -909,6 +930,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1073135f-2a56-4112-ba3b-07cc120122fd",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -1178,181 +1206,6 @@
       "targets": [],
       "value": "お知らせ：テスト記事編集1テスト1テスト1テスト1テスト1テスト1 お知らせ：テスト記事編集2テスト2テスト2テスト2テスト2テスト2  "
     }, {
-      "id": "328128b1-0730-4010-a379-6b247c665ca5",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "6a46fa1b-195b-4b03-9ab9-2292dffbd204",
-      "comment": "",
-      "command": "click",
-      "target": "id=MenuFramesPageMajor${page_id_announcement_test}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "1a754475-05b7-4969-af2a-5bc98aeabf7f",
-      "comment": "",
-      "command": "click",
-      "target": "css=.hidden-xs",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f949a6ab-dcc4-4ec7-bb55-4bc3c6ccb23a",
-      "comment": "",
-      "command": "click",
-      "target": "css=html",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7091bbaa-2e08-442c-8d7f-49d2d6b6da69",
-      "comment": "",
-      "command": "click",
-      "target": "css=.mce-i-image",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c42ca3e2-ac6c-4d00-a4bd-242c8d25b7dd",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d36ac4cb-da35-40d6-9110-34d1e5b244b3",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//div/div[2]/div/input",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "02e511ed-110c-4cee-85ce-79b051026dd1",
-      "comment": "## 手動で画像を選択してください。",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a59734f9-3307-4ad6-a671-17bc6b853562",
-      "comment": "",
-      "command": "waitForElementPresent",
-      "target": "css=.image-thumb",
-      "targets": [],
-      "value": "60000"
-    }, {
-      "id": "b6d3522e-f888-4bc2-8cbc-98516058a208",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//button[contains(.,'OK')]",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "5c1f4868-eeae-477a-8c05-c5ed76624a87",
-      "comment": "",
-      "command": "click",
-      "target": "name=save_1",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "70fb791e-8139-4ad0-acda-93e9d57845ea",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.img-responsive",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "68146473-f691-4925-a550-a7b5835d97ce",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c1b4efd9-24a0-4348-93ae-a4f1f8d3fd39",
-      "comment": "",
-      "command": "click",
-      "target": "css=#MenuFramesPageMajor${page_id_admin_user} > .pull-left",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "9068860e-be2e-46f7-b3b4-ec8f7840ad83",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.media-right img",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "586f2774-6427-4584-811c-d4536586d045",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b7ce25d0-b6d4-4ac9-9c38-2a6a147efdaa",
-      "comment": "",
-      "command": "click",
-      "target": "id=MenuFramesPageMajor${page_id_announcement_test}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "89a0198b-c009-41c3-abaa-5695c55c4e2a",
-      "comment": "",
-      "command": "click",
-      "target": "css=.hidden-xs",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "80014d58-e90e-4a5c-8ac5-3ad7e88b6f26",
-      "comment": "",
-      "command": "chooseOkOnNextConfirmation",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ecd6fe87-e394-4a7f-93e4-800b1a7a06de",
-      "comment": "",
-      "command": "click",
-      "target": "name=delete",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0f989e21-c39b-401d-b538-c24e9dd969f7",
-      "comment": "",
-      "command": "webdriverChooseOkOnVisibleConfirmation",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b089ec45-dabc-45f8-852c-d559d5b73aab",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=article",
-      "targets": [],
-      "value": "本文がありません。"
-    }, {
-      "id": "fd8d6842-e90d-46ec-adf1-9b0c6080af42",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "34681341-35ef-40d1-9b4b-53692207c7f8",
-      "comment": "",
-      "command": "click",
-      "target": "css=#MenuFramesPageMajor${page_id_admin_user} > .pull-left",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d94664a3-0dc7-497e-94ae-81bf002918d9",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.nc-not-found",
-      "targets": [],
-      "value": "トピックがありません。"
-    }, {
       "id": "739c58f5-7b90-41f2-9315-21b0ca45755a",
       "comment": "",
       "command": "",
@@ -1382,13 +1235,6 @@
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "faaa170d-8bef-474a-af6c-56e1aa128e07",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -1424,6 +1270,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a1e8609-4da9-4e96-aad1-cbb196e4da5f",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -1599,17 +1452,17 @@
     "id": "79b9e32f-05a2-4400-abed-443943f5decc",
     "name": "02-07-1.会員管理(テストユーザ1)",
     "commands": [{
+      "id": "f0f70b95-6ee7-4ab7-b192-5288ddcda846",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "e881668d-eafe-46d0-b45d-364d0407b916",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "158ac8e3-c0f1-45dc-9404-03ecc0a7dfd3",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -1645,6 +1498,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dc01058-1064-4f1d-9989-34edb870ed70",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -1849,17 +1709,17 @@
     "id": "984b5fe9-092f-4228-8991-22e8a33ea892",
     "name": "02-08-1.テストユーザ1：ログイン",
     "commands": [{
+      "id": "2f778c6a-bf5e-4ab9-96a7-9d0a1608239c",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "ee5ab92f-b6c8-42c2-be34-d7b6487636e0",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "6d7883b2-fce8-4712-a087-1a140cc8b24f",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -1940,7 +1800,14 @@
       "id": "e596be26-fc73-4a41-b592-bbc9bfe8c354",
       "comment": "",
       "command": "setSpeed",
-      "target": "300",
+      "target": "100",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08457952-df61-4131-8efa-77e3343c8352",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2017,14 +1884,14 @@
       "id": "398ab902-50c0-46ef-8c29-dafb420fb3e3",
       "comment": "",
       "command": "store",
-      "target": "admin",
+      "target": "sysadmin",
       "targets": [],
       "value": "user_system_login_id"
     }, {
       "id": "642da2c5-2f79-4f7f-9778-e10fe09ea284",
       "comment": "",
       "command": "store",
-      "target": "admin",
+      "target": "!QAZ2wsx",
       "targets": [],
       "value": "user_system_password"
     }, {
@@ -2038,14 +1905,14 @@
       "id": "d84ba2b7-b5a2-4450-9d5e-b504e86ec64f",
       "comment": "",
       "command": "store",
-      "target": "test1",
+      "target": "test01",
       "targets": [],
       "value": "user_test1_login_id"
     }, {
       "id": "ad7555bd-aa83-4b7f-9b8b-3f0ef2cd17b9",
       "comment": "",
       "command": "store",
-      "target": "test1",
+      "target": "!QAZ2wsx1",
       "targets": [],
       "value": "user_test1_password"
     }, {
@@ -2059,14 +1926,14 @@
       "id": "41d1d7e8-ac08-4e9a-8de3-d6fa52ce8930",
       "comment": "",
       "command": "store",
-      "target": "test2",
+      "target": "test02",
       "targets": [],
       "value": "user_test2_login_id"
     }, {
       "id": "a875cbf4-3794-4105-ba88-79975b18bce9",
       "comment": "",
       "command": "store",
-      "target": "test2",
+      "target": "!QAZ2wsx2",
       "targets": [],
       "value": "user_test2_password"
     }, {
@@ -2080,14 +1947,14 @@
       "id": "a5d4930d-9995-4bd8-8909-498ca28fb901",
       "comment": "",
       "command": "store",
-      "target": "test3",
+      "target": "test03",
       "targets": [],
       "value": "user_test3_login_id"
     }, {
       "id": "24ce1139-cf52-401f-a57d-64130a0a5ba5",
       "comment": "",
       "command": "store",
-      "target": "test3",
+      "target": "!QAZ2wsx3",
       "targets": [],
       "value": "user_test3_password"
     }, {
@@ -2102,6 +1969,13 @@
     "id": "f16effe5-661b-4f17-bbcb-5580ce2d03ab",
     "name": "01.ページIDリスト",
     "commands": [{
+      "id": "521c0845-6c99-448a-8e2a-9ea0e5f3d136",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "100",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "30f26a2d-8c6b-48d5-9b36-75e00ec48db6",
       "comment": "",
       "command": "store",
@@ -2148,17 +2022,17 @@
     "id": "cf6a23f6-b7f8-4fec-bb62-238553092cf6",
     "name": "02-07-2.会員管理(テストユーザ2)",
     "commands": [{
+      "id": "85d3a7d3-a2bd-42ca-83cf-a54c0fe3eb09",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "c2cdbfd5-c3a1-4c47-8305-a9c776b19207",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "38f39f68-5c34-4688-b539-0c7d7f538cc0",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2194,6 +2068,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "508f9a76-d86d-4477-9565-7c6882be2ac8",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -2398,17 +2279,17 @@
     "id": "9f238a16-f6b4-4479-aa8d-ee11849fdcee",
     "name": "02-09-01.ブログ-設置",
     "commands": [{
+      "id": "31f80e4e-e2d2-44c8-92e4-41317149d027",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "e5b537d6-8439-4284-acec-8b5c0f77c311",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "3f0b2625-72ef-43e9-997f-e8de051d442d",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2444,6 +2325,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "596cd97d-5673-4328-a09c-dcbed412e9bb",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -2647,17 +2535,17 @@
     "id": "40873771-60da-4cf3-ad06-2e51364f2d04",
     "name": "02-08-2.テストユーザ2：ログイン",
     "commands": [{
+      "id": "09e1ec17-68db-409b-a817-24bb3c465166",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "4ed83834-1d2f-4e46-aced-4f1e3aba6738",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "1be9e34f-0d88-49f5-ab27-b1b2c648e01f",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2735,17 +2623,17 @@
     "id": "24db5d73-6c81-49b3-ba6d-071095f999e1",
     "name": "02-09-02.ブログ-テストユーザ1",
     "commands": [{
+      "id": "80f6ac49-385e-4ed5-9752-504d98f6a34b",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "83d1ff5b-8cd6-472d-b0af-6a0f71246e05",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f61bac87-1fc2-4b97-8081-2aee47d7bdec",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2784,6 +2672,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "1d1de2a9-2b38-4ec7-9bb9-8a3280de5950",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "6e7f7a4c-cf01-4f25-b3d3-eebeed296318",
       "comment": "",
       "command": "click",
@@ -2812,10 +2707,24 @@
       "targets": [],
       "value": "テスト投稿(test1)"
     }, {
+      "id": "29a80c35-a8eb-4e17-b036-7e66e9588fa4",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "54ddae8e-2c72-4fcc-81a5-491e1c54e1e6",
       "comment": "",
       "command": "selectFrame",
       "target": "index=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26b970a9-5060-4b7e-987a-6ecb4e00e5ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
       "targets": [],
       "value": ""
     }, {
@@ -2963,17 +2872,17 @@
     "id": "c30c5a51-a2ca-491e-b54b-38290c7e31d8",
     "name": "02-09-03.ブログ-テストユーザ2",
     "commands": [{
+      "id": "093b8dab-af8d-4898-94a3-b8ce558b3209",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "fd4006d7-6c0d-42c9-bf44-07d5304ab506",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0b6510d9-6ce4-4418-a813-d35f718e20f4",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -3009,6 +2918,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6508b3c-08a2-4dc8-9422-2458a6ec8abf",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -3061,10 +2977,24 @@
       "targets": [],
       "value": "テスト投稿(test2)"
     }, {
+      "id": "46cf5048-a09b-4528-94a9-5c53c07c59ae",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "73377c6a-b73c-41a1-8ebb-1ffe10820201",
       "comment": "",
       "command": "selectFrame",
       "target": "index=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c7f6d46-92a7-4d97-ad57-d86e3f277b36",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
       "targets": [],
       "value": ""
     }, {
@@ -3135,17 +3065,17 @@
     "id": "6a3ffc62-c68e-4873-9120-26d0b02aa0a4",
     "name": "02-09-04.ブログ-テストユーザ1",
     "commands": [{
+      "id": "ad1f8355-79b0-4172-98f5-eaeb81279209",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "70072490-d6bb-4423-af4f-789eb3ceb429",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "887b9962-a0bf-4749-b04c-d181697a40c5",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -3181,6 +3111,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0d8938d-3660-4ea4-b25a-ddb9889cc6bd",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -3244,17 +3181,17 @@
     "id": "15e81058-176f-4f9c-bc20-d8298fa24dc5",
     "name": "02-09-05.ブログ-ルーム管理者",
     "commands": [{
+      "id": "f1e264e7-825c-4137-af42-ac0df1892bfb",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "866a33e9-b460-4bbe-ac56-9e2612c570f6",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e4faeda4-e588-46a6-baf0-6070e036f9b8",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -3290,6 +3227,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb198488-8bcd-47ab-8762-36f41a57f428",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -3430,17 +3374,17 @@
     "id": "473c6a27-2a61-4fe3-92e8-79a36498d76b",
     "name": "02-09-06.ブログ-テストユーザ2",
     "commands": [{
+      "id": "75c711f4-4ab0-4fae-895a-0e975c7f4b48",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "14a2cd81-d70d-46e9-8f3a-ef37f6a15a82",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "40e2d551-78e9-41db-a16b-253bd088be02",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -3476,6 +3420,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dde34c51-e7f2-4823-93c3-2ebe58ba5f1b",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -3588,17 +3539,17 @@
     "id": "1c3e5417-f9fc-4b64-9f7f-23ecea8684cc",
     "name": "02-09-07.ブログ-ルーム管理者",
     "commands": [{
+      "id": "dd4501ad-caf1-4363-b442-f2af7862f3ce",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "7039df2f-2f72-42ff-b16c-13ea9409811c",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "40812200-9696-4a30-9b10-067d24fa22be",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -3634,6 +3585,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa9e1758-ffec-430f-9133-08657a74fe06",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -3760,17 +3718,17 @@
     "id": "87fdf18e-c434-452e-93c4-0a483e7e312d",
     "name": "02-09-08.ブログ-テストユーザ1",
     "commands": [{
+      "id": "5d2d1fc5-1894-419e-b503-51710b61ea78",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "61154240-46dc-4920-adac-3797b0b941ca",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "6df3c651-e0bf-4a88-a1d0-33f94b2e7c43",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -3806,6 +3764,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81936850-b28c-4420-82d1-a9558445cbb2",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -4021,19 +3986,19 @@
     }]
   }, {
     "id": "0717859e-c141-427b-a413-095819fe218b",
-    "name": "02-11.プラグイン管理",
+    "name": "03-01.プラグイン管理",
     "commands": [{
+      "id": "59119f73-c010-4c5b-ac42-24cb00012b43",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "425cc6cf-291d-4952-8507-c25b77aa0f08",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "863a7206-6ec4-405f-90b8-9d04c6561aaf",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -4137,19 +4102,19 @@
     }]
   }, {
     "id": "eddc0574-96b4-4438-880c-abace61b376a",
-    "name": "02-12.会員項目設定",
+    "name": "03-02.会員項目設定",
     "commands": [{
+      "id": "e601be6b-d433-4701-839d-5ea4d54242b9",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "034bdb14-76ec-4a39-879c-573d7bf07d6c",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a6d5a269-756c-4ad2-b875-2e36bba35ed6",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -4543,19 +4508,19 @@
     }]
   }, {
     "id": "5560e30c-eff8-409c-96b0-d7e4cbc9e9de",
-    "name": "02-13.会員管理編集",
+    "name": "03-03.会員管理編集",
     "commands": [{
+      "id": "3ea747a6-b9be-4d8e-b333-8106f9618b91",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "072a3c66-8230-4e9c-ae2f-abdcd1f10c52",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "76c393b9-e2ca-4417-a0de-e1faca6f5815",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -4801,19 +4766,19 @@
     }]
   }, {
     "id": "df22662e-3e3a-4708-b840-73471d312b6e",
-    "name": "02-14.会員検索",
+    "name": "03-04.会員検索",
     "commands": [{
+      "id": "2c8134d2-1002-4e6c-9a0b-0e1fd8bc45bb",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "11b156af-1cbd-4c6a-a3f0-244f94125adc",
       "comment": "",
       "command": "open",
       "target": "${url_new}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "6d31b50d-bcb6-4269-b5ab-0d2da9aef662",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
       "targets": [],
       "value": ""
     }, {
@@ -5133,8 +5098,15 @@
     }]
   }, {
     "id": "186e32cb-9851-487c-9aee-f85adc8f7a1b",
-    "name": "02-15.会員一括削除、利用停止",
+    "name": "03-05.会員一括削除、利用停止",
     "commands": [{
+      "id": "2bbe2d93-6a34-41c8-86f1-bd6b9597e241",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "7e921753-053a-4344-86ca-35b028a86ffb",
       "comment": "",
       "command": "open",
@@ -5142,17 +5114,24 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "cd6e7363-da7f-432c-a73b-53fc1849ea05",
+      "id": "7b9cf3a1-fee6-4bd6-a97d-4a080d9df23a",
       "comment": "",
-      "command": "setWindowSize",
-      "target": "1386x1000",
+      "command": "store",
+      "target": "userDeleteTest=true",
       "targets": [],
-      "value": ""
+      "value": "execMode"
     }, {
       "id": "0334488a-f2a3-40d3-b03e-fbf7b2385d47",
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88e803fb-b6d1-4eb6-a1f5-846af249058a",
+      "comment": "",
+      "command": "if",
+      "target": "${execMode} === \"userDeleteTest=true\"",
       "targets": [],
       "value": ""
     }, {
@@ -5181,6 +5160,13 @@
       "comment": "",
       "command": "click",
       "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "534344cb-2ebc-4122-997a-3f9f6dab431d",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
       "targets": [],
       "value": ""
     }, {
@@ -5322,21 +5308,21 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "0fb6b09a-155e-4d61-bdda-3726d49d1401",
+      "id": "14c528c6-c481-411d-a066-7385a10eb39d",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//tr[@id='TrUserId2']/td/label/input",
-      "targets": [
-        ["id=UserId2", "id"],
-        ["name=UserId2", "name"],
-        ["css=#UserId2", "css:finder"],
-        ["xpath=//input[@id='UserId2']", "xpath:attributes"],
-        ["xpath=//tr[@id='TrUserId2']/td/label/input", "xpath:idRelative"],
-        ["xpath=//td/label/input", "xpath:position"]
-      ],
+      "command": "setSpeed",
+      "target": "1000",
+      "targets": [],
       "value": ""
     }, {
-      "id": "59e95c34-d615-44b0-8f00-164385013e56",
+      "id": "23f87eca-8c06-4add-b8e0-21c7dae0832d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td/label/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "379d2d6d-195b-444e-ba70-2d5d0b5f4929",
       "comment": "",
       "command": "click",
       "target": "css=.dropdown-toggle",
@@ -5348,21 +5334,21 @@
       ],
       "value": ""
     }, {
-      "id": "3f4a9726-6209-43a7-96b5-fc5e3a4d2149",
+      "id": "18287071-dda8-4db2-990f-032be82a445d",
       "comment": "",
       "command": "chooseOkOnNextConfirmation",
       "target": "",
       "targets": [],
       "value": ""
     }, {
-      "id": "b2f11899-192f-4b82-b6f3-440a972972f3",
+      "id": "8f01c0b3-ae5b-4740-8535-12822ccde0b2",
       "comment": "",
       "command": "chooseOkOnNextConfirmation",
       "target": "",
       "targets": [],
       "value": ""
     }, {
-      "id": "0aa87757-ff76-417b-b87d-4211d5e8da4b",
+      "id": "f894e6f2-3a37-4069-8dbf-1f2a51d8a188",
       "comment": "",
       "command": "click",
       "target": "linkText=削除する",
@@ -5377,17 +5363,24 @@
       ],
       "value": ""
     }, {
-      "id": "0f6fff1d-822b-46a5-ad1a-82ee027b921a",
+      "id": "7ba585c9-88bb-46f3-8dda-d9afb39fbbcc",
       "comment": "",
       "command": "webdriverChooseOkOnVisibleConfirmation",
       "target": "",
       "targets": [],
       "value": ""
     }, {
-      "id": "18c68246-c5ea-4d96-af45-e040948046ca",
+      "id": "7dbd7089-564c-40b9-9bf7-54cd8c955994",
       "comment": "",
       "command": "webdriverChooseOkOnVisibleConfirmation",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99f96986-24f4-47a4-85a0-b2a925a9debb",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
       "targets": [],
       "value": ""
     }, {
@@ -5426,6 +5419,398 @@
       "target": "linkText=ログイン",
       "targets": [],
       "value": "ログイン"
+    }, {
+      "id": "7890e4e1-1f0f-43f5-b190-6083bcb43db2",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f4a48b6-f96e-4ced-90e2-7d5279f4341b",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da52618e-bbc6-4985-8134-58ba8ace01f2",
+      "comment": "",
+      "command": "store",
+      "target": "userDeleteTest=true",
+      "targets": [],
+      "value": "execMode"
+    }]
+  }, {
+    "id": "0f1ed729-dd25-40a5-b653-dfb77da591c1",
+    "name": "02-05-2.お知らせ (アップロード関連)",
+    "commands": [{
+      "id": "adc2912e-4ba1-40e4-94b8-64368285d923",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f438e6f3-900a-41db-bf71-8ec84a3c86b6",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a00ee58b-1a46-4e05-b5cf-8b498ab054f5",
+      "comment": "",
+      "command": "store",
+      "target": "uploadFileTest=true",
+      "targets": [],
+      "value": "execMode"
+    }, {
+      "id": "9532f7b7-4127-4402-9073-a23838909c0c",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc788534-9434-4f41-814b-94e615023528",
+      "comment": "",
+      "command": "if",
+      "target": "${execMode} === \"uploadFileTest=true\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3434a6e-0402-4fe0-addf-1960c41cc2dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログイン",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7059eee0-4e3a-4d20-8222-661763a62ac9",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserUsername",
+      "targets": [],
+      "value": "${user_system_login_id}"
+    }, {
+      "id": "957c0903-c6fd-4e09-9538-59d745713b4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=UserPassword",
+      "targets": [],
+      "value": "${user_system_password}"
+    }, {
+      "id": "38ae5135-fd59-49ba-91d3-c5a727a516f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44afe785-cb53-483c-9226-5257ab742206",
+      "comment": "",
+      "command": "open",
+      "target": "${url_new}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "595e7565-af30-46ef-aa0f-5afd73332ccb",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor${page_id_home}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb231906-fb6f-422e-8888-5599e346f8c8",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f476864b-b798-42c5-9664-cfcaad6584b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor${page_id_admin_user}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "beb68682-dae6-48db-88a7-19fe1668446f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-muted",
+      "targets": [],
+      "value": "お知らせ：テスト記事編集1テスト1テスト1テスト1テスト1テスト1 お知らせ：テスト記事編集2テスト2テスト2テスト2テスト2テスト2  "
+    }, {
+      "id": "ba7ee91f-4785-43c1-b400-4bee8ef00520",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "159fdb1d-265e-481c-84cb-8ed1056f2012",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor${page_id_announcement_test}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cac464eb-08a9-419a-848e-6ffd34b93e6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hidden-xs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45fc1c87-d02d-46bf-b503-ddd93feab851",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1b6dc96-0ab6-44e0-bc5c-c5c7f49ad097",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mce-i-image",
+      "targets": [
+        ["css=.mce-i-image", "css:finder"],
+        ["xpath=//div[@id='image-btn']/button/i", "xpath:idRelative"],
+        ["xpath=//div[15]/div/div[3]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebb4973e-e133-48ab-be59-4547f10a6883",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/input",
+      "targets": [
+        ["id=mceu_58", "id"],
+        ["css=#mceu_58", "css:finder"],
+        ["xpath=//input[@id='mceu_58']", "xpath:attributes"],
+        ["xpath=//div[@id='mceu_70-body']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dcdefaa-53c9-4b84-afc5-ea37d3311b86",
+      "comment": "",
+      "command": "//type",
+      "target": "xpath=//div[2]/div/input",
+      "targets": [],
+      "value": "N:\\app\\nc3release\\nc3app-release\\テストimage.jpeg"
+    }, {
+      "id": "f1407e8f-05f3-4bfc-bf38-6ec2f5fdb368",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9d0de60-69aa-430b-9fc1-80552c2344cf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div[2]/div/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "191183c3-4cd4-42aa-87b9-0401473665e4",
+      "comment": "## 手動で画像を選択してください。",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a9836d8-61f3-48e1-9b9e-c7c550848bd1",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.image-thumb",
+      "targets": [],
+      "value": "60000"
+    }, {
+      "id": "07496eec-ba20-44e4-88e7-73e72a499edc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'OK')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03076830-6fcd-45e9-9eb9-803d94eaff7e",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "283560d0-9c96-4b3d-bef4-adda8a17857a",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c0c7c0-78b0-49b1-8d72-2e71dea0402b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1be5c4a-4277-4a2c-b6cf-c61bb2c9b35a",
+      "comment": "",
+      "command": "click",
+      "target": "name=save_1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "085cad80-4b9a-4349-a0ba-518dec28b11d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.img-responsive",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19aa9777-730e-48a7-be54-354e79541f6b",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01816364-afa0-4021-99f2-6229ee3b3da9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MenuFramesPageMajor${page_id_admin_user} > .pull-left",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93d99037-dd5f-4f96-a269-1024ff3531c6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.media-right img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95fc940d-55df-404c-b09b-9d525c96b9a2",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34696d7a-0d5d-460a-b720-56c70f84dc68",
+      "comment": "",
+      "command": "click",
+      "target": "id=MenuFramesPageMajor${page_id_announcement_test}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4e0ffc3-f268-4342-9672-84604ec9f129",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hidden-xs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b372c28e-161b-4788-86a2-f5d3c88dea9e",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4314319-ec11-4c46-8ceb-06e8ee171744",
+      "comment": "",
+      "command": "click",
+      "target": "name=delete",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f97dd46-54d2-4de6-b7e3-12201ceac62d",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d1ea2d3-fed7-4e38-bb61-aceffb393fe0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=article",
+      "targets": [],
+      "value": "本文がありません。"
+    }, {
+      "id": "c801504a-2695-477b-86a9-9ca6614c01f8",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75abf054-f245-49c3-b9c9-fa2d8c1d71f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MenuFramesPageMajor${page_id_admin_user} > .pull-left",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1639b159-eb90-42d4-a8ca-877c3ed29643",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.nc-not-found",
+      "targets": [],
+      "value": "トピックがありません。"
+    }, {
+      "id": "8759cedc-83e4-46a3-a667-9504ae9666ad",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af427ec4-6b4c-45de-94ad-c7ea203460de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ログアウト",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4376dede-cf10-45c8-bcc6-ea6de754f54e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=ログイン",
+      "targets": [],
+      "value": "ログイン"
+    }, {
+      "id": "00ad2f0c-7415-46e7-83d5-2f058673c498",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea70b7cd-263a-426b-85b3-6cd36b463988",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba1e0973-b562-4577-8142-f99829f6f9f7",
+      "comment": "",
+      "command": "store",
+      "target": "uploadFileTest=true",
+      "targets": [],
+      "value": "execMode"
     }]
   }],
   "suites": [{
