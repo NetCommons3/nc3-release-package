@@ -2,7 +2,7 @@
   "id": "da6e60f2-3605-4394-908b-39f054484ecd",
   "version": "2.0",
   "name": "nc3ReleaseCheck",
-  "url": "http://nc3.local:9096",
+  "url": "http://nc3release.local.jp",
   "tests": [{
     "id": "9459b46f-bab5-43f2-9d3a-d390611c14e7",
     "name": "02-01.インストール",
@@ -5334,16 +5334,9 @@
       ],
       "value": ""
     }, {
-      "id": "18287071-dda8-4db2-990f-032be82a445d",
-      "comment": "",
-      "command": "chooseOkOnNextConfirmation",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "8f01c0b3-ae5b-4740-8535-12822ccde0b2",
-      "comment": "",
-      "command": "chooseOkOnNextConfirmation",
+      "id": "a1e107d7-dfe2-4dfc-8a28-c5f552111184",
+      "comment": "## 削除ダイアログは手動でクリックしてください。(連続して表示される確認ダイアログはSeleniumIDEで制御できないため)",
+      "command": "",
       "target": "",
       "targets": [],
       "value": ""
@@ -5361,20 +5354,6 @@
         ["xpath=//span/ul/li[3]/a", "xpath:position"],
         ["xpath=//a[contains(.,'削除する')]", "xpath:innerText"]
       ],
-      "value": ""
-    }, {
-      "id": "7ba585c9-88bb-46f3-8dda-d9afb39fbbcc",
-      "comment": "",
-      "command": "webdriverChooseOkOnVisibleConfirmation",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7dbd7089-564c-40b9-9bf7-54cd8c955994",
-      "comment": "",
-      "command": "webdriverChooseOkOnVisibleConfirmation",
-      "target": "",
-      "targets": [],
       "value": ""
     }, {
       "id": "99f96986-24f4-47a4-85a0-b2a925a9debb",
@@ -5587,20 +5566,6 @@
       "target": "xpath=//div[2]/div/input",
       "targets": [],
       "value": "N:\\app\\nc3release\\nc3app-release\\テストimage.jpeg"
-    }, {
-      "id": "f1407e8f-05f3-4bfc-bf38-6ec2f5fdb368",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c9d0de60-69aa-430b-9fc1-80552c2344cf",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//div/div[2]/div/input",
-      "targets": [],
-      "value": ""
     }, {
       "id": "191183c3-4cd4-42aa-87b9-0401473665e4",
       "comment": "## 手動で画像を選択してください。",
