@@ -50,7 +50,7 @@ if [ "$MODE" = "prod" ]; then
 	execute "cd $PKGDIR"
 	execute "zip -r $ZIPFILE.zip $PROJECTNAME"
 else
-	execute "cp -Rpf $WORKDIR/$PROJECTNAME $PKGDIR/$PROJECTNAME"
+	execute "cp -Rpf $WORKDIR/$PROJECTNAME $PKGDIR/"
 fi
 
 
