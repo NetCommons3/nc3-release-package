@@ -12,6 +12,9 @@ if [ ! "${MODE}" = "" ]; then
 	MODE=test; export MODE
 fi
 
+execute "mkdir -p $WORKDIR"
+execute "mkdir -p $PKGDIR"
+
 ################################
 # NetCommons3パッケージの作成
 ################################

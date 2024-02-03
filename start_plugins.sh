@@ -24,13 +24,8 @@ echo ""
 
 execute "cd $CURDIR"
 
-if [ ! -d $WORKDIR ]; then
-	execute "mkdir $WORKDIR"
-fi
-
-if [ ! -d $PKGDIR ]; then
-	execute "mkdir $PKGDIR"
-fi
+execute "mkdir -p $WORKDIR"
+execute "mkdir -p $PKGDIR"
 
 ################################
 # githubから最新のソースを取得

@@ -29,7 +29,7 @@ echo "$NC3VERSION" > app/VERSION
 echo ""
 
 execute "rm -f composer.lock"
-execute "${CMDCMPOSER} clear-cache"
+#execute "${CMDCMPOSER} clear-cache"
 execute "${CMDCMPOSER} install --no-dev"
 
 ########################
