@@ -22,6 +22,6 @@ if [ ! -d $CHKDIR-upd ]; then
 	exit 1
 fi
 
-execute "cp -Rpf $PKGDIR/$PROJECTNAME/. $CHKDIR-upd/"
+execute "cp -Rpf $PKGDIR/$PROJECTNAME/. $CHKDIR-upd/" "force"
 
 #-- end --
