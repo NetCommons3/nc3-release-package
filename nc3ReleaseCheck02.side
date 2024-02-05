@@ -216,8 +216,15 @@
     }]
   }, {
     "id": "1cfd8ed4-1731-4e77-b589-3cb46b79715c",
-    "name": "03-01.インストール (前ver)",
+    "name": "04-01.インストール (前ver)",
     "commands": [{
+      "id": "89b811b1-24d7-432e-b19d-2ea8e5919e71",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-01.インストール (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "255ea2ea-c8f3-4dcc-9917-3f93dad4eac2",
       "comment": "",
       "command": "open",
@@ -228,7 +235,7 @@
       "id": "ff7223ed-02ad-45eb-951c-208e294713f5",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -236,6 +243,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19572ef6-e32d-48bf-8336-5a26a22776ec",
+      "comment": "",
+      "command": "echo",
+      "target": "- 利用規約",
       "targets": [],
       "value": ""
     }, {
@@ -260,6 +274,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "ba92380f-3a9f-4f76-ad05-d8f5d7699323",
+      "comment": "",
+      "command": "echo",
+      "target": "- バージョンチェック",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "19d46066-a495-4f8f-b9fa-21685a8a26b0",
       "comment": "",
       "command": "assertText",
@@ -278,6 +299,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cfa5462-00f5-4986-92ea-d7acd435de21",
+      "comment": "",
+      "command": "echo",
+      "target": "- データベース設定",
       "targets": [],
       "value": ""
     }, {
@@ -320,6 +348,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64891d78-a06a-4b1b-894d-162711ac4734",
+      "comment": "",
+      "command": "echo",
+      "target": "- 管理者ユーザ作成",
       "targets": [],
       "value": ""
     }, {
@@ -379,6 +414,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "2dd45ffd-7414-4195-ab9f-de13cacd79c8",
+      "comment": "",
+      "command": "echo",
+      "target": "- インストール完了",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "fd09c958-bbc4-455e-bd32-e4eb12f266e6",
       "comment": "",
       "command": "assertText",
@@ -409,8 +451,15 @@
     }]
   }, {
     "id": "b85afca0-c201-4158-882e-c71a4a367725",
-    "name": "03-02.システム管理者：ログイン (前ver)",
+    "name": "04-02.システム管理者：ログイン (前ver)",
     "commands": [{
+      "id": "3ca62b68-f1ee-4cc2-adf4-ef2e3b96e11f",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-02.システム管理者：ログイン (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "db8c15d6-138b-49e6-844d-d8662ff0f7f1",
       "comment": "",
       "command": "open",
@@ -421,7 +470,7 @@
       "id": "d86bff89-19ce-4490-ab63-48c01a2a7ba4",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -429,6 +478,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e62769e-6ae1-49d6-ae8b-efd771391197",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -481,6 +537,20 @@
       "targets": [],
       "value": "${user_system_handle}"
     }, {
+      "id": "fdf92ac3-0419-4418-9a99-8f8668104cce",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1ef7e3b-a417-42e7-af94-9cd35d05503d",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログアウト",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "744f7729-5e65-483b-a03b-835f85e5671b",
       "comment": "",
       "command": "click",
@@ -497,8 +567,15 @@
     }]
   }, {
     "id": "160c97c2-43ff-4237-9268-54ced3268c82",
-    "name": "03-04.フレーム (前ver)",
+    "name": "04-04.フレーム (前ver)",
     "commands": [{
+      "id": "74bf4563-4b9d-4629-bba6-6763074cfabe",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-04.フレーム (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "058bc115-f69e-4aaf-ac36-6b9920da65a2",
       "comment": "",
       "command": "open",
@@ -509,7 +586,7 @@
       "id": "ea9a37ae-75ff-404b-bb5d-f3760ef727d1",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -517,6 +594,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ada8376-4b3c-45ea-9014-3ebecc3ab437",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -562,10 +646,31 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "272a2015-dd65-4594-9b7b-173abb55f83d",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ設定",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "6ee47c0e-5bac-43c9-bd77-57054ac2c94f",
       "comment": "",
       "command": "click",
       "target": "linkText=ページ設定",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c36757b2-ac16-4512-bb76-b5e2763ead6a",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7fa6472-8c1f-406e-b14b-51df7a48149e",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ追加",
       "targets": [],
       "value": ""
     }, {
@@ -604,6 +709,20 @@
       "targets": [],
       "value": "フレームテスト"
     }, {
+      "id": "2985661b-cc08-4d43-b88d-41d57b979c92",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09ac8030-563c-476b-8557-4647f43b015e",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ設定終了",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "14abd878-3746-496d-b518-da2946aae245",
       "comment": "",
       "command": "click",
@@ -622,6 +741,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ce040f5-10cd-4923-8814-5b9d940c968d",
+      "comment": "",
+      "command": "echo",
+      "target": "- セッティングモードON",
       "targets": [],
       "value": ""
     }, {
@@ -646,10 +772,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "95cf3ea9-ff76-41f8-8cc2-ac0b9d290140",
+      "comment": "",
+      "command": "echo",
+      "target": "- フレーム追加",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "9af88cb1-38d1-483d-ba45-a240c5547b51",
       "comment": "",
       "command": "click",
       "target": "css=#box-79 > .add-plugin > .btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f81a3b29-e707-4510-b757-659ae56dacad",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
@@ -674,6 +814,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "ca1fe7c9-d222-443c-8b61-d4e94843037a",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "6d137ce7-e22b-4840-8386-ade6d1262dbc",
       "comment": "",
       "command": "click",
@@ -685,6 +832,20 @@
       "comment": "",
       "command": "click",
       "target": "linkText=キャンセル",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f73701f8-3b3f-494e-a65d-8d9de7f1112b",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "773aa7fa-06ca-410c-9aba-9415f0ad203c",
+      "comment": "",
+      "command": "echo",
+      "target": "- フレーム名変更",
       "targets": [],
       "value": ""
     }, {
@@ -751,6 +912,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "3e34912e-4609-441e-9b93-e5b25dca03ba",
+      "comment": "",
+      "command": "echo",
+      "target": "- セッティングモードOFF",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "fb9f9bb9-5d04-4661-ac52-33a72431551d",
       "comment": "",
       "command": "click",
@@ -764,6 +932,20 @@
       "target": "linkText=セッティングモードON",
       "targets": [],
       "value": "セッティングモードON"
+    }, {
+      "id": "32439d3d-d803-4815-bc3f-bda4a5db2b75",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6a4478e-798d-4801-89e4-f8ca980fd1f2",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログアウト",
+      "targets": [],
+      "value": ""
     }, {
       "id": "fb1dd38f-8f53-4678-a84b-9343e4118d0d",
       "comment": "",
@@ -781,8 +963,15 @@
     }]
   }, {
     "id": "e50279df-3a89-4a09-85fe-1ce929364a8f",
-    "name": "03-03.ページ (前ver)",
+    "name": "04-03.ページ (前ver)",
     "commands": [{
+      "id": "431c3afb-2121-4ff0-a70d-88a2cd5958fe",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-03.ページ (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "1331b319-20b9-46a3-b9eb-2ff596ede981",
       "comment": "",
       "command": "open",
@@ -793,7 +982,7 @@
       "id": "ff938281-1ec9-44ed-a1d9-16772631dc4f",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -801,6 +990,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b851cc7-fa9a-44c2-8267-ca153182b5d1",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -846,6 +1042,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "d16d68fa-b1c7-4d5c-a0a8-8f9f5d7c4161",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ設定",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "7f031493-8365-4b8b-8ed2-d8215bed4b1d",
       "comment": "",
       "command": "click",
@@ -857,6 +1060,20 @@
       "comment": "",
       "command": "click",
       "target": "css=.h2 > .pull-right .hidden-xs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c372093f-faf6-49e2-81f8-7789579e3ecc",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8add9678-3964-449d-bd14-671e680b899c",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ追加(ページ1)",
       "targets": [],
       "value": ""
     }, {
@@ -888,6 +1105,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "10b896b9-7af7-459f-971c-b525eefdf4bc",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ追加(ページ2)",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "3b655a18-f63e-4d45-9c59-a72b1466d10a",
       "comment": "",
       "command": "click",
@@ -916,6 +1140,20 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "ee690500-ea05-4c7e-ab10-35e264c1225c",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3883f94a-b4ea-4f4f-92b6-167995e59f30",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ設定終了",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "55e864c7-30f2-457b-b6df-19d146de0750",
       "comment": "",
       "command": "click",
@@ -927,6 +1165,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1214b8bb-874b-4bad-a3a2-e15cf55011d2",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログアウト",
       "targets": [],
       "value": ""
     }, {
@@ -946,8 +1191,22 @@
     }]
   }, {
     "id": "3920415a-ade2-43de-ac98-d1c63e0ab0ad",
-    "name": "03-05.お知らせ (前ver)",
+    "name": "04-05.お知らせ (前ver)",
     "commands": [{
+      "id": "1538faa5-8434-4173-9640-36d8e52e8386",
+      "comment": "",
+      "command": "store",
+      "target": "uploadFileTest=true",
+      "targets": [],
+      "value": "execMode"
+    }, {
+      "id": "d37be82e-70c9-455f-9c89-524e58487931",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-05.お知らせ (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "c437b8bc-37de-49a4-acc5-0abeb0a9d02e",
       "comment": "",
       "command": "open",
@@ -958,7 +1217,7 @@
       "id": "8004c8aa-44cb-41a1-becd-1dc844064d64",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -966,6 +1225,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0a60688-1bd3-4fff-b65f-36b4efa88174",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -1011,10 +1277,31 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "c11a636d-cfe2-4679-927c-1e2b87ca2ddd",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ設定",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "57f7915a-2990-4dee-9c39-02fc6cec2d70",
       "comment": "",
       "command": "click",
       "target": "linkText=ページ設定",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef892422-ec23-48c0-9553-1ca2b9cea457",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbd1e370-06fc-4fe7-a644-f4779572e99d",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ追加",
       "targets": [],
       "value": ""
     }, {
@@ -1053,6 +1340,20 @@
       "targets": [],
       "value": "お知らせ"
     }, {
+      "id": "8bde0ba7-de94-4844-b17f-ac711aa0876d",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21f222f4-49af-4d04-a7eb-27818e166510",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ設定終了",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "3bfe5f53-10a5-40e1-994c-385577a7f8aa",
       "comment": "",
       "command": "click",
@@ -1074,6 +1375,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "4eeb3090-cbd1-4900-9617-8f58fb593393",
+      "comment": "",
+      "command": "echo",
+      "target": "- セッティングモードON",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "1578420b-a7a1-426d-be63-e147467c5dbe",
       "comment": "",
       "command": "click",
@@ -1081,10 +1389,31 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "8ecf6ed5-d11d-46c7-a5bb-754d9f8abcc8",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e3063b4-b47f-4695-81bb-b0facbe57b2e",
+      "comment": "",
+      "command": "echo",
+      "target": "- フレーム追加",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "3db00110-9c98-450c-8e84-a50a4d820c4d",
       "comment": "",
       "command": "click",
       "target": "css=#box-84 > .add-plugin > .btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26ef3ebd-0d0b-4d59-ac66-40ccb7eec374",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
@@ -1099,6 +1428,20 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9ae866d-f78d-4258-a970-c93ea2882c0a",
+      "comment": "",
+      "command": "echo",
+      "target": "- お知らせ登録",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "705a14db-e8b7-4f5e-973f-881c7b410331",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
@@ -1123,6 +1466,20 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "422b131f-d775-467b-b39c-f6ecf55be3cc",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "747af7b4-18c2-438e-a49a-ad97bfb2354f",
+      "comment": "",
+      "command": "if",
+      "target": "${execMode} === \"uploadFileTest=true\"",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "749bd5ea-a17b-4f6c-8780-34d27483ff33",
       "comment": "",
       "command": "click",
@@ -1134,13 +1491,6 @@
       "comment": "",
       "command": "click",
       "target": "css=.mce-i-image",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d466adf8-bdc1-427b-8051-080f2fdbbe08",
-      "comment": "",
-      "command": "",
-      "target": "",
       "targets": [],
       "value": ""
     }, {
@@ -1172,6 +1522,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "1dd53af5-2aaa-4af4-8c46-e4c98c60ffce",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "997d06b4-0ca0-4f80-b183-0e7c363874af",
       "comment": "",
       "command": "click",
@@ -1179,17 +1536,38 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "72b8026e-dd36-46f9-9743-83f3824b9d76",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.img-responsive",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "191b1c9a-bef5-41ec-a9ea-3b92fdcde286",
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4213222f-4ab9-454d-9959-8b56f101514e",
+      "comment": "",
+      "command": "echo",
+      "target": "- セッティングモードOFF",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ea1fe25-d0c6-4c24-a3be-30b810ed482b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=セッティングモードOFF",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c4c48c6-534e-4279-b716-c9d6346f1155",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db6282a7-0655-48c3-bc9c-0a2c01bbefdd",
+      "comment": "",
+      "command": "echo",
+      "target": "- お知らせ登録確認",
       "targets": [],
       "value": ""
     }, {
@@ -1212,17 +1590,17 @@
       "targets": [],
       "value": "お知らせ：テスト記事投稿2テスト2テスト2テスト2テスト2テスト2"
     }, {
-      "id": "1ea1fe25-d0c6-4c24-a3be-30b810ed482b",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=セッティングモードOFF",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "760ec7e9-0481-4800-a7e6-85d9570f5528",
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cc330b1-bdeb-4231-923e-4d426282f5cd",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログアウト",
       "targets": [],
       "value": ""
     }, {
@@ -1242,8 +1620,15 @@
     }]
   }, {
     "id": "31f834e2-0863-4856-b789-9137e410a634",
-    "name": "03-06.ルーム管理 (前ver)",
+    "name": "04-06.ルーム管理 (前ver)",
     "commands": [{
+      "id": "86aa5059-3916-4192-ad24-672e9694b560",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-06.ルーム管理 (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "53991edb-facd-449d-9a08-2ac7290699b5",
       "comment": "",
       "command": "open",
@@ -1254,7 +1639,7 @@
       "id": "521a086f-43b8-436d-8953-65f9f44e29fc",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -1262,6 +1647,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "634cdfb2-a8b6-46ab-9a2c-d209dd250861",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -1300,6 +1692,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "cc9d6bb2-c6ce-4b39-bfbb-5119fe4dbccf",
+      "comment": "",
+      "command": "echo",
+      "target": "- ルーム管理に移動",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "31d06b2e-540b-4798-97c4-061f42bff0f6",
       "comment": "",
       "command": "click",
@@ -1313,13 +1712,6 @@
       "target": "linkText=管理終了",
       "targets": [],
       "value": "管理終了"
-    }, {
-      "id": "2bee5c34-94ad-4a93-8655-535d7346a600",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
     }, {
       "id": "90c1c39d-36df-43ea-beb4-1031bbca2fac",
       "comment": "",
@@ -1342,10 +1734,31 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "ef699374-efdf-4b79-85bb-06a2d3303c59",
+      "comment": "",
+      "command": "echo",
+      "target": "- ルーム追加",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "660af599-b24e-4999-8956-130d817fb6bf",
       "comment": "",
       "command": "click",
       "target": "css=.btn-success > .hidden-xs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "296f3578-526d-4c91-8d87-d1f11aa92beb",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96de3e64-8484-4c2f-8ffc-81ff1c4a8e3d",
+      "comment": "",
+      "command": "echo",
+      "target": "---- 1 基本設定",
       "targets": [],
       "value": ""
     }, {
@@ -1377,6 +1790,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "6080364e-a8a5-4550-8511-64d80203ff5d",
+      "comment": "",
+      "command": "echo",
+      "target": "---- 2 参加者の選択",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "37f58852-cfb3-438b-8d45-edba21c1e265",
       "comment": "",
       "command": "assertText",
@@ -1398,6 +1818,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "c7be1c0f-c407-4818-8279-930472b263dc",
+      "comment": "",
+      "command": "echo",
+      "target": "---- 3 プラグインの選択",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "ab327048-81c6-4afd-bca4-0d474a8f3128",
       "comment": "",
       "command": "assertText",
@@ -1412,19 +1839,33 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "353f2641-8eb2-434f-8371-44ea776c8d1d",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "53e0f928-9727-4d07-9f70-46b8a52042f2",
       "comment": "",
       "command": "assertText",
       "target": "css=.rooms-index-room-name",
       "targets": [],
       "value": "コミュニティルーム1"
+    }, {
+      "id": "7cad99a1-a76d-4c30-8b60-cf80a0527e7c",
+      "comment": "",
+      "command": "pause",
+      "target": "6000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7594373-cf56-405e-bd13-036fb9694479",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f37a444-e368-446f-945f-9ccd4db99474",
+      "comment": "",
+      "command": "echo",
+      "target": "- 管理終了",
+      "targets": [],
+      "value": ""
     }, {
       "id": "5750d1c9-baf2-4ac5-ba2d-abd9a54869b8",
       "comment": "",
@@ -1447,6 +1888,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "cfde969d-be5b-48b6-8cca-f3537c41ab1d",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログアウト",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "3f780658-b3c4-4e8c-8e2a-bac70567ebb3",
       "comment": "",
       "command": "click",
@@ -1463,8 +1911,15 @@
     }]
   }, {
     "id": "68122269-9df1-4a3e-8c4b-c26822991ea7",
-    "name": "03-07-1.会員管理(テストユーザ1) (前ver)",
+    "name": "04-07-1.会員管理(テストユーザ1) (前ver)",
     "commands": [{
+      "id": "70a2c8e6-501d-44d1-83c5-6ce6cdf773cc",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-07-1.会員管理(テストユーザ1) (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "b914ab91-3f16-421f-899d-f5264c643573",
       "comment": "",
       "command": "open",
@@ -1475,7 +1930,7 @@
       "id": "3ad22908-4db1-419a-a900-2dd5c986fe0e",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -1483,6 +1938,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "974fdca7-6a89-4903-a900-2fa8fc146669",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -1528,6 +1990,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "2182b9bc-536b-46bd-af52-55b5df82214e",
+      "comment": "",
+      "command": "echo",
+      "target": "- 会員管理に移動",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "d41abf06-0e50-4b49-a64c-211ba2d9ec8d",
       "comment": "",
       "command": "click",
@@ -1554,7 +2023,7 @@
       "command": "assertText",
       "target": "css=.plugin-user-manager > .clearfix",
       "targets": [],
-      "value": "会員管理 1 / 1 ページ (総件数: 1件)\\nエクスポート インポート"
+      "value": "会員管理 1 / 1 ページ (総件数: 1件)\nエクスポート インポート"
     }, {
       "id": "12853344-90be-4aca-851a-fe26eb069aba",
       "comment": "",
@@ -1563,10 +2032,31 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "8762ce1a-4c12-46b5-936b-01c5a4a08922",
+      "comment": "",
+      "command": "echo",
+      "target": "- 会員登録",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "a1132243-f2a9-4239-8638-4d7df1923352",
       "comment": "",
       "command": "click",
       "target": "css=.btn-success > .hidden-xs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "917ce7fa-544e-4c52-8028-40b4c4fdb47b",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d68029c8-d14a-4876-a417-0bf6a0646c67",
+      "comment": "",
+      "command": "echo",
+      "target": "---- 1 基本設定",
       "targets": [],
       "value": ""
     }, {
@@ -1619,6 +2109,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "0070eb0e-9c40-4ce5-9b91-d10b1908973a",
+      "comment": "",
+      "command": "echo",
+      "target": "---- 2 参加ルームの選択",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "ee820638-4429-4fe4-ab46-cf7ac05b7b24",
       "comment": "",
       "command": "assertText",
@@ -1668,10 +2165,24 @@
       "targets": [],
       "value": "${user_test1_handle}"
     }, {
+      "id": "6deef797-1c23-4008-ba08-0e428ab3987c",
+      "comment": "",
+      "command": "pause",
+      "target": "6000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "0fb5a40b-dbee-42e1-a494-6eece776e19d",
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3086402-c77c-4517-a300-e571fe024307",
+      "comment": "",
+      "command": "echo",
+      "target": "- 管理終了",
       "targets": [],
       "value": ""
     }, {
@@ -1689,6 +2200,20 @@
       "targets": [],
       "value": "管理"
     }, {
+      "id": "2eb21a5a-4b03-47f1-8781-2f598607bbb3",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f786781-0edd-460f-a48f-b13de7933064",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログアウト",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "3a73d7a7-0f92-4058-9d60-bd955bd0e022",
       "comment": "",
       "command": "click",
@@ -1705,8 +2230,15 @@
     }]
   }, {
     "id": "1a1ac893-2916-44ca-88ee-cf55ca4c1090",
-    "name": "03-07-2.会員管理(テストユーザ2) (前ver)",
+    "name": "04-07-2.会員管理(テストユーザ2) (前ver)",
     "commands": [{
+      "id": "4093edd3-0538-4bf4-9efe-954f02b808fd",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-07-2.会員管理(テストユーザ2) (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "e5699e50-a563-4777-b613-d3b19b434a5c",
       "comment": "",
       "command": "open",
@@ -1717,7 +2249,7 @@
       "id": "eebba03c-7990-4390-862e-d4c1a8f5ee00",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -1725,6 +2257,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd264db6-a1a0-4847-94ce-a5d35e150561",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -1770,6 +2309,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "f3736506-dd6a-4250-a144-9de92039d0a8",
+      "comment": "",
+      "command": "echo",
+      "target": "- 会員管理に移動",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "8fa64eb9-433a-4764-9b00-dfc9f806eaa6",
       "comment": "",
       "command": "click",
@@ -1796,7 +2342,7 @@
       "command": "assertText",
       "target": "css=.plugin-user-manager > .clearfix",
       "targets": [],
-      "value": "会員管理 1 / 1 ページ (総件数: 2件)\\nエクスポート インポート"
+      "value": "会員管理 1 / 1 ページ (総件数: 2件)\nエクスポート インポート"
     }, {
       "id": "b453a4c0-8116-467f-bb23-2a8b2a5b4a4a",
       "comment": "",
@@ -1805,10 +2351,31 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "d68fd6ff-b064-4493-8b0c-c8fd868232f6",
+      "comment": "",
+      "command": "echo",
+      "target": "- 会員登録",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "0933e44f-455b-41f4-a8c3-c8d8dd9bb597",
       "comment": "",
       "command": "click",
       "target": "css=.btn-success > .hidden-xs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a09a408f-3ede-421a-8461-9ad840a0c65d",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afafebd2-c0ae-4773-bd37-73fbc6ab4d23",
+      "comment": "",
+      "command": "echo",
+      "target": "---- 1 基本設定",
       "targets": [],
       "value": ""
     }, {
@@ -1861,6 +2428,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "122843cf-647f-45fb-a71a-74b31c2e7d6c",
+      "comment": "",
+      "command": "echo",
+      "target": "---- 2 参加ルームの選択",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "b1b02da1-b4f5-420a-b269-a7afc4f8cd9d",
       "comment": "",
       "command": "assertText",
@@ -1910,10 +2484,24 @@
       "targets": [],
       "value": "${user_test2_handle}"
     }, {
+      "id": "258c1d0c-afd8-4237-9462-73f3cbd92ec0",
+      "comment": "",
+      "command": "pause",
+      "target": "6000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "792e2f3a-9eab-45f0-96e0-b13b5d886a8d",
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6299961f-60a1-4b19-b55c-7e3c98510201",
+      "comment": "",
+      "command": "echo",
+      "target": "- 管理終了",
       "targets": [],
       "value": ""
     }, {
@@ -1931,6 +2519,20 @@
       "targets": [],
       "value": "管理"
     }, {
+      "id": "4ccdc0bb-166b-4401-8159-b3dacd192943",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1508dcc6-57fc-4942-bc53-b547cd0fc07f",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログアウト",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "66216344-46a6-499d-b0f4-bee1a6f99f3b",
       "comment": "",
       "command": "click",
@@ -1947,8 +2549,15 @@
     }]
   }, {
     "id": "2dd1320e-f2a9-4f87-8ee1-e36db09aa63f",
-    "name": "03-09-01.ブログ-設置 (前ver)",
+    "name": "04-09-01.ブログ-設置 (前ver)",
     "commands": [{
+      "id": "8654de7b-e17a-471d-aa85-12c7d6ed9c9f",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-09-01.ブログ-設置 (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "b19e30f4-ebe3-4756-948e-a08d215db9b4",
       "comment": "",
       "command": "open",
@@ -1959,7 +2568,7 @@
       "id": "407e547b-f0d3-4346-bc68-2fa1443ab04c",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -1967,6 +2576,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c911f067-e8c5-450f-b1f2-41e1d02df3be",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -2012,10 +2628,31 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "644fd8ac-8b17-4f27-894b-4b703c4bc942",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ設定",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "005ef489-b10b-4ea1-939d-6ee9530acbff",
       "comment": "",
       "command": "click",
       "target": "linkText=ページ設定",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "947bbda7-ef46-4aea-b559-002162968591",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be53d15e-db9e-48e3-a9fe-768806745daf",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ追加",
       "targets": [],
       "value": ""
     }, {
@@ -2054,17 +2691,24 @@
       "targets": [],
       "value": "ブログ"
     }, {
+      "id": "0b47cb26-73a8-444b-9bbe-9b5964b51534",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "028742a8-6ecd-4a58-9cdf-2a4b61b6c394",
+      "comment": "",
+      "command": "echo",
+      "target": "- ページ設定終了",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "8f91c1ad-0ca2-472a-83a2-722e136d5987",
       "comment": "",
       "command": "click",
       "target": "linkText=ページ設定終了",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "82232011-48ec-48ae-a88c-019f84853188",
-      "comment": "",
-      "command": "",
-      "target": "",
       "targets": [],
       "value": ""
     }, {
@@ -2075,6 +2719,20 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "64f847c1-4845-491a-9f84-dd49bdfdd323",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa6613e1-3b1b-428c-a15c-35c867c1a4d1",
+      "comment": "",
+      "command": "echo",
+      "target": "- セッティングモードON",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "c8b3f6fb-000d-4da7-8c66-dec29fec39ce",
       "comment": "",
       "command": "click",
@@ -2082,10 +2740,31 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "9ac521ca-3b3a-470f-a5bb-6ce932892ece",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee9e4147-2690-4764-8855-680098d69177",
+      "comment": "",
+      "command": "echo",
+      "target": "- フレーム追加",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "e33ca305-ed0f-4890-90ab-c14971782186",
       "comment": "",
       "command": "click",
       "target": "css=#box-116 > .add-plugin > .btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e983d71-c4fb-4a68-abee-cb98cc1524cc",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
@@ -2100,6 +2779,20 @@
       "comment": "",
       "command": "click",
       "target": "linkText=追加",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67d24e7f-9837-4a72-92d9-3b4d92e643f9",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "109e9097-b64c-47ec-8a62-2748b0afbe0d",
+      "comment": "",
+      "command": "echo",
+      "target": "- ブロック追加",
       "targets": [],
       "value": ""
     }, {
@@ -2173,10 +2866,31 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "430bca4a-83af-4b36-b52c-45de6bb48c91",
+      "comment": "",
+      "command": "echo",
+      "target": "- セッティングモードOFF",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "b23f40b1-595f-4cc3-9315-ddcef54775d6",
       "comment": "",
       "command": "click",
       "target": "linkText=セッティングモードOFF",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7926662-dee1-4fce-ae24-a5b89fd2c5ac",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a660a10-7387-4bc0-8964-8dd0db31f2a0",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログアウト",
       "targets": [],
       "value": ""
     }, {
@@ -2196,8 +2910,15 @@
     }]
   }, {
     "id": "8efba643-5f84-4ec6-bbe7-3475bb574a8e",
-    "name": "03-09-02.ブログ-テストユーザ1 (前ver)",
+    "name": "04-09-02.ブログ-テストユーザ1 (前ver)",
     "commands": [{
+      "id": "973858a6-60f9-4828-a9ab-3132c665189f",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-09-02.ブログ-テストユーザ1 (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "48faf861-a40e-4d73-8e58-c6386532936a",
       "comment": "",
       "command": "open",
@@ -2208,7 +2929,7 @@
       "id": "56cf990b-a7b9-453c-b9a8-99d1c81e499a",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2216,6 +2937,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c234c8c-bbdc-46d6-8a70-9c90c99dae70",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -2258,6 +2986,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b6b846f-23c7-4c1e-b7c1-66e6e4f92dad",
+      "comment": "",
+      "command": "echo",
+      "target": "- 記事追加",
       "targets": [],
       "value": ""
     }, {
@@ -2324,6 +3059,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "bcc7fab7-cee7-470f-a672-85f495873148",
+      "comment": "",
+      "command": "echo",
+      "target": "- 記事編集",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "f98a48c0-dd80-45d8-86d0-5b87daf9aa93",
       "comment": "",
       "command": "click",
@@ -2366,6 +3108,20 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "1a56ec4f-c2e3-41ed-8244-ea1cab036c87",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f97d0bf-b97a-4158-9402-f54a3708cd7b",
+      "comment": "",
+      "command": "echo",
+      "target": "- 記事確認",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "2a98d5e7-7486-463e-b07b-4dc14b73d9b2",
       "comment": "",
       "command": "assertText",
@@ -2401,12 +3157,12 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "d66ab24f-d2d3-462e-8aa7-04eb7d8452b5",
+      "id": "3dd1faa2-c998-4b2b-8a63-150e90386c9a",
       "comment": "",
-      "command": "assertText",
-      "target": "linkText=ログアウト",
+      "command": "echo",
+      "target": "- ログアウト",
       "targets": [],
-      "value": "ログアウト"
+      "value": ""
     }, {
       "id": "bca851dc-15b4-4fe4-8a4c-ba13d4fc289a",
       "comment": "",
@@ -2424,8 +3180,15 @@
     }]
   }, {
     "id": "b8166e70-35cb-4910-ad6b-c6a7add23698",
-    "name": "03-09-03.ブログ-テストユーザ2 (前ver)",
+    "name": "04-09-03.ブログ-テストユーザ2 (前ver)",
     "commands": [{
+      "id": "afc523da-0345-47bc-b715-770a05f0093d",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-09-03.ブログ-テストユーザ2 (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "4e1d92a8-c903-406c-937d-3831875d8138",
       "comment": "",
       "command": "open",
@@ -2436,7 +3199,7 @@
       "id": "5266efbe-4f2e-4767-a7e4-2ad9c202b085",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2444,6 +3207,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64669071-bbf0-466d-b38e-7879901f3701",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -2510,6 +3280,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "4871725a-8f4c-44ed-88d1-22f20d22900a",
+      "comment": "",
+      "command": "echo",
+      "target": "- 記事追加",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "c609ed2d-5a62-4937-afc3-2db8d30c0919",
       "comment": "",
       "command": "click",
@@ -2552,6 +3329,20 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "7989acfc-bb4b-49d0-8063-a0916a7979a4",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "520835b1-74cb-4b8f-a3d4-b5e34f1aa53c",
+      "comment": "",
+      "command": "echo",
+      "target": "- 記事確認",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "b7f29b7e-08a4-4f57-b611-d9887a0c5772",
       "comment": "",
       "command": "assertText",
@@ -2573,12 +3364,12 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "63894052-3739-4bc2-aa88-00d2d517efcd",
+      "id": "87008367-2f1b-41de-86cd-a49d128eef83",
       "comment": "",
-      "command": "assertText",
-      "target": "linkText=ログアウト",
+      "command": "echo",
+      "target": "- ログアウト",
       "targets": [],
-      "value": "ログアウト"
+      "value": ""
     }, {
       "id": "e9e672ce-dd45-4be1-99b5-ad6ac9fd4ed5",
       "comment": "",
@@ -2596,8 +3387,15 @@
     }]
   }, {
     "id": "8da18316-bb08-4cb2-bfd9-1c1d14946907",
-    "name": "03-09-07.ブログ-ルーム管理者 (前ver)",
+    "name": "04-09-07.ブログ-ルーム管理者 (前ver)",
     "commands": [{
+      "id": "d1e88fdd-033a-4d37-ad1e-fb1869052430",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-09-07.ブログ-ルーム管理者 (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "c5b6de35-aff3-437e-8277-60a2ea986add",
       "comment": "",
       "command": "open",
@@ -2608,7 +3406,7 @@
       "id": "251b772c-ac64-440b-ad22-4fc5214f457a",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2616,6 +3414,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9be2ff68-6aa8-4911-b2ac-e994035b08f0",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -2661,6 +3466,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "25e3019c-1c54-419f-8936-4aff58891245",
+      "comment": "",
+      "command": "echo",
+      "target": "- 記事確認",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "0027d397-ef39-4eea-85ec-0569cda6a4b9",
       "comment": "",
       "command": "assertText",
@@ -2679,6 +3491,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d0d674e-5d38-4394-856d-9245aab809eb",
+      "comment": "",
+      "command": "echo",
+      "target": "- 記事編集(公開)",
       "targets": [],
       "value": ""
     }, {
@@ -2745,12 +3564,12 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "e8ec4c7d-6578-4e47-b451-c8e9553963f6",
+      "id": "610df6b5-ce68-4fa6-a7da-0c8d3a5498d8",
       "comment": "",
-      "command": "assertText",
-      "target": "linkText=ログアウト",
+      "command": "echo",
+      "target": "- ログアウト",
       "targets": [],
-      "value": "ログアウト"
+      "value": ""
     }, {
       "id": "23dc2c1b-ee08-41ae-9c3f-64f851e9fb6e",
       "comment": "",
@@ -2768,8 +3587,15 @@
     }]
   }, {
     "id": "72e47e61-22ee-4b41-856b-fe5ad480f293",
-    "name": "03-09-08.ブログ-テストユーザ1 (前ver)",
+    "name": "04-09-08.ブログ-テストユーザ1 (前ver)",
     "commands": [{
+      "id": "f7453b0c-3f50-42fa-9bf5-5fcfae064f50",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-09-08.ブログ-テストユーザ1 (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "eb15c48d-d460-4e07-a7db-f16d0b2d639c",
       "comment": "",
       "command": "open",
@@ -2780,7 +3606,7 @@
       "id": "55f07747-94d5-479d-b744-29ff6dc6e6ff",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2788,6 +3614,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d7adb7a-480c-4dd0-81e2-a1f66b0e31fe",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -2833,6 +3666,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "2c987570-8fc3-4be7-b997-2ab04749e195",
+      "comment": "",
+      "command": "echo",
+      "target": "- 記事確認",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "9a01f8f7-0767-4a77-b44c-23893396c692",
       "comment": "",
       "command": "assertText",
@@ -2861,6 +3701,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "34df68af-bbba-448d-8ff0-f0870928c920",
+      "comment": "",
+      "command": "echo",
+      "target": "- コメント追加",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "d8e1ebd8-2a2a-4e4e-8dd4-4b6f69f46095",
       "comment": "",
       "command": "click",
@@ -2882,6 +3729,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "d01fe6ea-f260-41d6-8555-cc4a662c34bc",
+      "comment": "",
+      "command": "pause",
+      "target": "10000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "9fe1e665-92f7-4cb3-8d17-c81505297eb6",
       "comment": "",
       "command": "",
@@ -2889,12 +3743,12 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "bf7edbe2-967b-4486-9be8-71563dbd0c79",
+      "id": "0033ad1d-5324-4c53-b983-d29261cfdc9c",
       "comment": "",
-      "command": "assertText",
-      "target": "linkText=ログアウト",
+      "command": "echo",
+      "target": "- ログアウト",
       "targets": [],
-      "value": "ログアウト"
+      "value": ""
     }, {
       "id": "fab9702b-dc4c-40c5-82f9-61e6cd442a76",
       "comment": "",
@@ -2912,8 +3766,15 @@
     }]
   }, {
     "id": "a49f1ff3-9bf7-4082-b98b-da4938c0f714",
-    "name": "03-10.プラグイン管理 (前ver)",
+    "name": "04-10.プラグイン管理 (前ver)",
     "commands": [{
+      "id": "8d418e15-e66d-4a38-87eb-8094f2fdc072",
+      "comment": "",
+      "command": "echo",
+      "target": "[04-10.プラグイン管理 (前ver)]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "8c0309c7-15b1-45b0-8cd8-cd4e1fc7bf65",
       "comment": "",
       "command": "open",
@@ -2924,7 +3785,7 @@
       "id": "d1b6508a-d54e-4325-9f0d-866cf759fbe8",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1386x1000",
+      "target": "1200x1000",
       "targets": [],
       "value": ""
     }, {
@@ -2932,6 +3793,13 @@
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "741f9a23-3cd2-4a27-996b-49193ab4c165",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログイン",
       "targets": [],
       "value": ""
     }, {
@@ -2970,6 +3838,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "be24bc4a-ab9b-4d68-833f-a08d8c8e97ed",
+      "comment": "",
+      "command": "echo",
+      "target": "- プラグイン管理に移動",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "cc556f72-2064-4104-9a7b-46824524c83b",
       "comment": "",
       "command": "click",
@@ -2984,13 +3859,6 @@
       "targets": [],
       "value": "管理終了"
     }, {
-      "id": "6d89d997-8fde-43ca-b4d6-ece1a12a612c",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "f4230a9b-e425-423f-8eb8-942c3a3c7a74",
       "comment": "",
       "command": "click",
@@ -3003,12 +3871,19 @@
       "command": "assertText",
       "target": "css=.plugin-plugin-manager > .clearfix",
       "targets": [],
-      "value": "プラグイン管理\\nNetCommons3: ${oldversion}"
+      "value": "プラグイン管理\nNetCommons3: ${oldversion}"
     }, {
       "id": "070cb588-33bd-490d-90a8-46c9e504ba15",
       "comment": "",
       "command": "",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8bdc1a0-cbac-41fe-9a9a-35f4124fd5cb",
+      "comment": "",
+      "command": "echo",
+      "target": "- ログアウト",
       "targets": [],
       "value": ""
     }, {
@@ -3028,26 +3903,12 @@
     }]
   }],
   "suites": [{
-    "id": "110dbb21-a5dc-4365-b1b0-81963e5826c5",
-    "name": "01-新規インストール",
-    "persistSession": false,
-    "parallel": false,
-    "timeout": 300,
-    "tests": ["e2a0d9f4-bbf3-4ad5-b99c-f90882bfe0dd", "f16effe5-661b-4f17-bbcb-5580ce2d03ab"]
-  }, {
     "id": "d36fdb0a-a9d8-47af-836c-33ce0b7ef609",
     "name": "02-前verインストール",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
     "tests": ["e2a0d9f4-bbf3-4ad5-b99c-f90882bfe0dd", "f16effe5-661b-4f17-bbcb-5580ce2d03ab", "1cfd8ed4-1731-4e77-b589-3cb46b79715c", "b85afca0-c201-4158-882e-c71a4a367725", "e50279df-3a89-4a09-85fe-1ce929364a8f", "160c97c2-43ff-4237-9268-54ced3268c82", "3920415a-ade2-43de-ac98-d1c63e0ab0ad", "31f834e2-0863-4856-b789-9137e410a634", "68122269-9df1-4a3e-8c4b-c26822991ea7", "1a1ac893-2916-44ca-88ee-cf55ca4c1090", "2dd1320e-f2a9-4f87-8ee1-e36db09aa63f", "8efba643-5f84-4ec6-bbe7-3475bb574a8e", "b8166e70-35cb-4910-ad6b-c6a7add23698", "8da18316-bb08-4cb2-bfd9-1c1d14946907", "72e47e61-22ee-4b41-856b-fe5ad480f293", "a49f1ff3-9bf7-4082-b98b-da4938c0f714"]
-  }, {
-    "id": "3c4d98a0-0bf6-43e7-8b00-c70495d15d10",
-    "name": "03-前verからアップグレード",
-    "persistSession": false,
-    "parallel": false,
-    "timeout": 300,
-    "tests": ["e2a0d9f4-bbf3-4ad5-b99c-f90882bfe0dd", "f16effe5-661b-4f17-bbcb-5580ce2d03ab"]
   }],
   "urls": ["http://html.local:9096/", "http://nc3.local:9096/"],
   "plugins": []
