@@ -3542,7 +3542,7 @@
     }, {
       "id": "54ddae8e-2c72-4fcc-81a5-491e1c54e1e6",
       "comment": "",
-      "command": "selectFrame",
+      "command": "//selectFrame",
       "target": "index=0",
       "targets": [],
       "value": ""
@@ -3861,7 +3861,7 @@
     }, {
       "id": "73377c6a-b73c-41a1-8ebb-1ffe10820201",
       "comment": "",
-      "command": "selectFrame",
+      "command": "//selectFrame",
       "target": "index=0",
       "targets": [],
       "value": ""
