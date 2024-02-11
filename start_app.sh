@@ -7,7 +7,7 @@
 PROFILEDIR=$(cd $(dirname $0); pwd)
 source ${PROFILEDIR}/nc3profile
 
-if [ ! "${MODE}" = "" ]; then
+if [ "${MODE}" = "" ]; then
 	#MODE=prod; export MODE
 	MODE=test; export MODE
 fi
