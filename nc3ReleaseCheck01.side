@@ -3519,19 +3519,19 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "6a63b645-0e73-48b0-afbe-6ee3847fce7b",
-      "comment": "",
-      "command": "pause",
-      "target": "1000",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "7d0c7557-e629-47a4-81a4-5ae6e0b138b7",
       "comment": "",
       "command": "type",
       "target": "id=BlogEntryTitle",
       "targets": [],
       "value": "テスト投稿(test1)"
+    }, {
+      "id": "6a63b645-0e73-48b0-afbe-6ee3847fce7b",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
     }, {
       "id": "29a80c35-a8eb-4e17-b036-7e66e9588fa4",
       "comment": "",
@@ -3838,19 +3838,19 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "0c233ea6-3fdf-4032-a347-77184b02e6f7",
-      "comment": "",
-      "command": "pause",
-      "target": "1000",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "455aeddf-c610-419a-8da5-eb97d315c519",
       "comment": "",
       "command": "type",
       "target": "id=BlogEntryTitle",
       "targets": [],
       "value": "テスト投稿(test2)"
+    }, {
+      "id": "0c233ea6-3fdf-4032-a347-77184b02e6f7",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
     }, {
       "id": "46cf5048-a09b-4528-94a9-5c53c07c59ae",
       "comment": "",
