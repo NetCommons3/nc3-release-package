@@ -2073,7 +2073,7 @@
       "command": "assertText",
       "target": "css=.plugin-user-manager > .clearfix",
       "targets": [],
-      "value": "会員管理 1 / 1 ページ (総件数: 1件)\nエクスポート インポート"
+      "value": "会員管理 1 / 1 ページ (総件数: 1件)\\nエクスポート インポート"
     }, {
       "id": "61b739cd-83a5-45fa-a7db-551b22a35efe",
       "comment": "",
@@ -2741,7 +2741,7 @@
       "command": "assertText",
       "target": "css=.plugin-user-manager > .clearfix",
       "targets": [],
-      "value": "会員管理 1 / 1 ページ (総件数: 2件)\nエクスポート インポート"
+      "value": "会員管理 1 / 1 ページ (総件数: 2件)\\nエクスポート インポート"
     }, {
       "id": "2c87d1e7-06e8-43ac-90f9-243f9b437c07",
       "comment": "",
@@ -3519,6 +3519,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "6a63b645-0e73-48b0-afbe-6ee3847fce7b",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "7d0c7557-e629-47a4-81a4-5ae6e0b138b7",
       "comment": "",
       "command": "type",
@@ -3828,6 +3835,13 @@
       "comment": "",
       "command": "click",
       "target": "xpath=//span[contains(.,'追加')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c233ea6-3fdf-4032-a347-77184b02e6f7",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
@@ -5169,7 +5183,7 @@
       "command": "assertText",
       "target": "css=.plugin-plugin-manager > .clearfix",
       "targets": [],
-      "value": "プラグイン管理\nNetCommons3: ${newversion}"
+      "value": "プラグイン管理\\nNetCommons3: ${newversion}"
     }, {
       "id": "81ededfd-0954-465d-b022-914abf9fbe9a",
       "comment": "",
